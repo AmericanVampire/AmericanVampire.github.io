@@ -2,18 +2,18 @@
    This file loads last on every page so header, footer, cards, buttons, and
    page shells stay consistent across the main site and hosted server pages. */
 :root {
-  --rg-bg: #090b0d;
-  --rg-bg-deep: #030405;
-  --rg-sky: #07111a;
-  --rg-panel: #121514;
-  --rg-panel-2: #1c2119;
-  --rg-stone: #3b4340;
-  --rg-line: rgba(149, 139, 112, .34);
+  --rg-bg: #06111f;
+  --rg-bg-deep: #020711;
+  --rg-sky: #09233c;
+  --rg-panel: #0b1a2b;
+  --rg-panel-2: #102941;
+  --rg-stone: #526477;
+  --rg-line: rgba(75, 142, 194, .38);
   --rg-line-gold: rgba(231, 168, 41, .42);
   --rg-gold: #e7c56d;
   --rg-gold-2: #fff0b3;
   --rg-ember: #f28a1d;
-  --rg-leaf: #6f9b2f;
+  --rg-blue: #2b89d2;
   --rg-text: #f6f8fb;
   --rg-muted: #b9c3cf;
   --rg-cyan: #71dce9;
@@ -34,10 +34,10 @@ body {
   margin: 0 !important;
   color: var(--rg-text) !important;
   background:
-    radial-gradient(circle at 50% 0, rgba(35, 91, 125, .16), transparent 30rem),
-    radial-gradient(circle at 82% 28%, rgba(111, 155, 47, .10), transparent 28rem),
-    radial-gradient(circle at 12% 30%, rgba(242, 138, 29, .10), transparent 24rem),
-    linear-gradient(180deg, #0c1112 0%, #090b0d 45%, #050607 100%),
+    radial-gradient(circle at 50% 0, rgba(45, 146, 218, .20), transparent 34rem),
+    radial-gradient(circle at 76% 22%, rgba(43, 137, 210, .13), transparent 30rem),
+    radial-gradient(circle at 15% 26%, rgba(242, 138, 29, .08), transparent 24rem),
+    linear-gradient(180deg, #071727 0%, #06111f 48%, #020711 100%),
     var(--rg-bg) !important;
   font-family: Inter, "Segoe UI", Arial, sans-serif !important;
 }
@@ -58,8 +58,8 @@ a {
   z-index: 3000 !important;
   height: var(--rg-header-height) !important;
   min-height: var(--rg-header-height) !important;
-  background: linear-gradient(180deg, rgba(5, 7, 8, .98), rgba(7, 10, 10, .96)) !important;
-  border-bottom: 1px solid rgba(231, 168, 41, .20) !important;
+  background: linear-gradient(180deg, rgba(2, 7, 17, .98), rgba(5, 15, 27, .96)) !important;
+  border-bottom: 1px solid rgba(75, 142, 194, .32) !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .18) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -188,6 +188,10 @@ a {
   box-shadow: none !important;
 }
 
+.realmguard-hero {
+  margin-bottom: 34px !important;
+}
+
 .hero {
   display: grid !important;
   place-items: center !important;
@@ -222,10 +226,10 @@ h3 {
 .page-hero {
   padding: 72px 0 54px !important;
   background:
-    radial-gradient(circle at 82% 0, rgba(111, 155, 47, .10), transparent 26rem),
-    radial-gradient(circle at 14% 0, rgba(242, 138, 29, .08), transparent 24rem),
-    linear-gradient(120deg, rgba(14, 17, 17, .96), rgba(7, 12, 14, .92)) !important;
-  border-bottom: 1px solid rgba(231, 168, 41, .20) !important;
+    radial-gradient(circle at 82% 0, rgba(43, 137, 210, .16), transparent 28rem),
+    radial-gradient(circle at 14% 0, rgba(242, 138, 29, .06), transparent 24rem),
+    linear-gradient(120deg, rgba(8, 28, 49, .96), rgba(4, 13, 24, .94)) !important;
+  border-bottom: 1px solid rgba(75, 142, 194, .32) !important;
 }
 
 .section,
@@ -242,17 +246,17 @@ h3 {
 .proof-band,
 .section-alt {
   background:
-    linear-gradient(90deg, rgba(10, 12, 12, .94), rgba(20, 24, 19, .92), rgba(10, 12, 12, .94)) !important;
-  border-top: 1px solid rgba(231, 168, 41, .18) !important;
-  border-bottom: 1px solid rgba(231, 168, 41, .18) !important;
+    linear-gradient(90deg, rgba(4, 12, 23, .96), rgba(8, 29, 50, .92), rgba(4, 12, 23, .96)) !important;
+  border-top: 1px solid rgba(75, 142, 194, .32) !important;
+  border-bottom: 1px solid rgba(75, 142, 194, .32) !important;
 }
 
 .proof-grid div {
-  border-left-color: rgba(149, 139, 112, .22) !important;
+  border-left-color: rgba(75, 142, 194, .24) !important;
 }
 
 .proof-grid div:last-child {
-  border-right-color: rgba(149, 139, 112, .22) !important;
+  border-right-color: rgba(75, 142, 194, .24) !important;
 }
 
 .card,
@@ -280,7 +284,7 @@ h3 {
   border: 1px solid var(--rg-line) !important;
   border-radius: 8px !important;
   background:
-    linear-gradient(145deg, rgba(28, 33, 25, .94), rgba(14, 17, 17, .96)) !important;
+    linear-gradient(145deg, rgba(12, 31, 51, .94), rgba(5, 16, 29, .96)) !important;
   box-shadow: none !important;
 }
 
@@ -308,13 +312,36 @@ input[type="submit"] {
   padding: 28px 20px !important;
   margin: 0 !important;
   color: #94a3b5 !important;
-  background: linear-gradient(180deg, #050607, var(--rg-bg-deep)) !important;
-  border-top: 1px solid rgba(231, 168, 41, .18) !important;
+  background: linear-gradient(180deg, #04101d, var(--rg-bg-deep)) !important;
+  border-top: 1px solid rgba(75, 142, 194, .30) !important;
   text-align: center !important;
 }
 
 body.subpage {
   padding-top: 0 !important;
+  background:
+    radial-gradient(circle at 50% 0, rgba(45, 146, 218, .20), transparent 34rem),
+    radial-gradient(circle at 76% 22%, rgba(43, 137, 210, .13), transparent 30rem),
+    radial-gradient(circle at 15% 26%, rgba(242, 138, 29, .08), transparent 24rem),
+    linear-gradient(180deg, #071727 0%, #06111f 48%, #020711 100%),
+    var(--rg-bg) !important;
+}
+
+.reference-page .panel,
+.panel,
+.code-card,
+.live-preview,
+.color-card,
+.effect,
+.enchantment-card,
+.enchantment-card-clean {
+  border-color: var(--rg-line) !important;
+}
+
+html body main section.panel.panel,
+html body main .reference-page section.panel.panel {
+  border: 1px solid var(--rg-line) !important;
+  border-top-color: var(--rg-line) !important;
 }
 
 @media (max-width: 760px) {
