@@ -2,14 +2,18 @@
    This file loads last on every page so header, footer, cards, buttons, and
    page shells stay consistent across the main site and hosted server pages. */
 :root {
-  --rg-bg: #07101c;
-  --rg-bg-deep: #030811;
-  --rg-panel: #0f1d2e;
-  --rg-panel-2: #132236;
-  --rg-line: #29405a;
-  --rg-line-gold: rgba(231, 197, 109, .38);
+  --rg-bg: #090b0d;
+  --rg-bg-deep: #030405;
+  --rg-sky: #07111a;
+  --rg-panel: #121514;
+  --rg-panel-2: #1c2119;
+  --rg-stone: #3b4340;
+  --rg-line: rgba(149, 139, 112, .34);
+  --rg-line-gold: rgba(231, 168, 41, .42);
   --rg-gold: #e7c56d;
   --rg-gold-2: #fff0b3;
+  --rg-ember: #f28a1d;
+  --rg-leaf: #6f9b2f;
   --rg-text: #f6f8fb;
   --rg-muted: #b9c3cf;
   --rg-cyan: #71dce9;
@@ -30,8 +34,10 @@ body {
   margin: 0 !important;
   color: var(--rg-text) !important;
   background:
-    radial-gradient(circle at 78% 0, rgba(51, 134, 174, .14), transparent 34rem),
-    radial-gradient(circle at 12% 18%, rgba(231, 197, 109, .08), transparent 26rem),
+    radial-gradient(circle at 50% 0, rgba(35, 91, 125, .16), transparent 30rem),
+    radial-gradient(circle at 82% 28%, rgba(111, 155, 47, .10), transparent 28rem),
+    radial-gradient(circle at 12% 30%, rgba(242, 138, 29, .10), transparent 24rem),
+    linear-gradient(180deg, #0c1112 0%, #090b0d 45%, #050607 100%),
     var(--rg-bg) !important;
   font-family: Inter, "Segoe UI", Arial, sans-serif !important;
 }
@@ -52,8 +58,8 @@ a {
   z-index: 3000 !important;
   height: var(--rg-header-height) !important;
   min-height: var(--rg-header-height) !important;
-  background: rgba(3, 8, 17, .96) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, .09) !important;
+  background: linear-gradient(180deg, rgba(5, 7, 8, .98), rgba(7, 10, 10, .96)) !important;
+  border-bottom: 1px solid rgba(231, 168, 41, .20) !important;
   box-shadow: 0 1px 4px rgba(0, 0, 0, .18) !important;
   backdrop-filter: blur(12px) !important;
   -webkit-backdrop-filter: blur(12px) !important;
@@ -131,8 +137,8 @@ a {
 
 .main-nav a:hover,
 .main-nav a.active {
-  background: rgba(231, 197, 109, .11) !important;
-  border-color: rgba(231, 197, 109, .22) !important;
+  background: rgba(231, 168, 41, .12) !important;
+  border-color: rgba(231, 168, 41, .38) !important;
   color: var(--rg-gold-2) !important;
 }
 
@@ -196,8 +202,11 @@ h3 {
 
 .page-hero {
   padding: 72px 0 54px !important;
-  background: rgba(10, 23, 39, .74) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+  background:
+    radial-gradient(circle at 82% 0, rgba(111, 155, 47, .10), transparent 26rem),
+    radial-gradient(circle at 14% 0, rgba(242, 138, 29, .08), transparent 24rem),
+    linear-gradient(120deg, rgba(14, 17, 17, .96), rgba(7, 12, 14, .92)) !important;
+  border-bottom: 1px solid rgba(231, 168, 41, .20) !important;
 }
 
 .section,
@@ -213,9 +222,18 @@ h3 {
 
 .proof-band,
 .section-alt {
-  background: rgba(7, 15, 25, .66) !important;
-  border-top: 1px solid rgba(255, 255, 255, .06) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, .06) !important;
+  background:
+    linear-gradient(90deg, rgba(10, 12, 12, .94), rgba(20, 24, 19, .92), rgba(10, 12, 12, .94)) !important;
+  border-top: 1px solid rgba(231, 168, 41, .18) !important;
+  border-bottom: 1px solid rgba(231, 168, 41, .18) !important;
+}
+
+.proof-grid div {
+  border-left-color: rgba(149, 139, 112, .22) !important;
+}
+
+.proof-grid div:last-child {
+  border-right-color: rgba(149, 139, 112, .22) !important;
 }
 
 .card,
@@ -242,7 +260,8 @@ h3 {
 .cta-grid div {
   border: 1px solid var(--rg-line) !important;
   border-radius: 8px !important;
-  background: rgba(15, 29, 46, .94) !important;
+  background:
+    linear-gradient(145deg, rgba(28, 33, 25, .94), rgba(14, 17, 17, .96)) !important;
   box-shadow: none !important;
 }
 
@@ -259,7 +278,7 @@ input[type="submit"] {
 
 .button.primary,
 .main-nav a.active {
-  border-color: rgba(231, 197, 109, .36) !important;
+  border-color: rgba(231, 168, 41, .44) !important;
 }
 
 .site-footer,
@@ -269,8 +288,8 @@ input[type="submit"] {
   padding: 28px 20px !important;
   margin: 0 !important;
   color: #94a3b5 !important;
-  background: var(--rg-bg-deep) !important;
-  border-top: 1px solid rgba(255, 255, 255, .09) !important;
+  background: linear-gradient(180deg, #050607, var(--rg-bg-deep)) !important;
+  border-top: 1px solid rgba(231, 168, 41, .18) !important;
   text-align: center !important;
 }
 
