@@ -138,7 +138,20 @@ body.subpage{
 }
 @media(max-width:760px){
   .site-header{position:static!important;height:auto!important;min-height:0!important}
-  .site-header .nav-shell{height:auto!important;min-height:var(--rg-global-header-height)!important;padding:10px 0!important}
-  .site-header .main-nav{display:none!important}
+  .site-header .nav-shell{
+    width:min(1180px,calc(100% - 28px))!important;
+    height:auto!important;
+    min-height:var(--rg-global-header-height)!important;
+    padding:10px 0!important;
+    gap:14px!important;
+  }
+  .site-header .main-nav{
+    display:flex!important;
+    gap:10px!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-end!important;
+  }
+  .site-header .main-nav a{padding:8px 0!important;font-size:.78rem!important}
+  .site-header .main-nav a::after{bottom:3px!important}
   body.subpage{padding-top:0!important}
 }

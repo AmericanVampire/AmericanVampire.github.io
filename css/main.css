@@ -38,7 +38,7 @@ img{max-width:100%}
   border-bottom:1px solid rgba(255,255,255,.09);
 }
 .nav-shell{
-  width:min(1240px,calc(100% - 36px));
+  width:min(1180px,calc(100% - 40px));
   min-height:var(--header-height);
   margin:auto;
   display:flex;
@@ -228,7 +228,7 @@ p{color:var(--muted);line-height:1.72}
   .proof-grid div,.proof-grid div:last-child{border-right:0}
 }
 @media(max-width:650px){
-  .nav-shell{min-height:var(--header-height);width:min(100% - 28px,1240px);gap:14px}
+  .nav-shell{min-height:var(--header-height);width:min(1180px,calc(100% - 28px));gap:14px}
   .brand{letter-spacing:.11em;font-size:var(--brand-font-size)}
   .realmguard-hero{background-position:center center}
   .main-nav{gap:10px}
@@ -246,4 +246,50 @@ p{color:var(--muted);line-height:1.72}
   .realmguard-helmet{margin:auto;width:125px}
   .server-brand-lockup{align-items:flex-start}
   .expendables-server-logo{width:70px;height:70px}
+}
+
+/* Final locked Realm Guard brand sizing across all main-site pages. */
+.site-header{
+  height:var(--header-height)!important;
+  min-height:var(--header-height)!important;
+}
+.nav-shell{
+  width:min(1180px,calc(100% - 40px))!important;
+  height:var(--header-height)!important;
+  min-height:var(--header-height)!important;
+  padding:0!important;
+  align-items:center!important;
+}
+.brand{
+  gap:10px!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:var(--brand-font-size)!important;
+  font-weight:800!important;
+  line-height:1!important;
+  letter-spacing:.11em!important;
+  text-transform:uppercase!important;
+}
+.brand-mark,
+.brand-icon{
+  width:var(--brand-icon-size)!important;
+  height:var(--brand-icon-size)!important;
+  flex:0 0 var(--brand-icon-size)!important;
+  object-fit:contain!important;
+}
+@media(max-width:760px){
+  .site-header{height:auto!important}
+  .nav-shell{
+    width:min(1180px,calc(100% - 28px))!important;
+    height:auto!important;
+    min-height:var(--header-height)!important;
+    padding:10px 0!important;
+    gap:14px!important;
+  }
+  .main-nav{
+    display:flex!important;
+    gap:10px!important;
+    flex-wrap:wrap!important;
+    justify-content:flex-end!important;
+  }
+  .main-nav a{padding:8px 0!important;font-size:.78rem!important}
 }
