@@ -50,8 +50,21 @@
   transition:transform .18s ease;
 }
 .rg-global-nav a:hover::after{transform:scaleX(1)}
+
+/* Perfect Realm pages use this single Realm Guard header. */
+body:has(.rg-global-header) .site-header{
+  display:none!important;
+}
+body:has(.rg-global-header).subpage{
+  padding-top:var(--rg-global-header-height)!important;
+}
+body:has(.rg-global-header):not(.subpage) .hero{
+  padding-top:var(--rg-global-header-height)!important;
+}
 @media(max-width:760px){
   .rg-global-header{position:static;height:auto}
   .rg-global-shell{min-height:58px;padding:10px 0;align-items:center}
   .rg-global-nav{display:none}
+  body:has(.rg-global-header).subpage{padding-top:0!important}
+  body:has(.rg-global-header):not(.subpage) .hero{padding-top:0!important}
 }

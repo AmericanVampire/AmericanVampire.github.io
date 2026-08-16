@@ -91,6 +91,11 @@ html, body { width:100%; max-width:100%; overflow-x:hidden; }
 *, *::before, *::after { box-sizing:border-box; }
 img, video, canvas, svg, iframe, table { max-width:100%; }
 
+.site-footer,
+.library-footer {
+  text-align: center !important;
+}
+
 
 /* Nested portal shell: Realm Guard global header above Expendables navigation */
 @media(min-width:761px){
