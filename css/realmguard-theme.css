@@ -136,14 +136,33 @@ a {
 }
 
 .main-nav a:hover,
-.main-nav a.active {
+.main-nav a.active,
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active {
   background: rgba(231, 168, 41, .12) !important;
   border-color: rgba(231, 168, 41, .38) !important;
   color: var(--rg-gold-2) !important;
 }
 
-.main-nav a::after {
+.site-header .main-nav a,
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 38px !important;
+  padding: 0 13px !important;
+  border-style: solid !important;
+  border-width: 1px !important;
+  border-color: transparent !important;
+  border-radius: 8px !important;
+  font: 800 .84rem/1 Inter, "Segoe UI", Arial, sans-serif !important;
+}
+
+.main-nav a::after,
+.site-header .main-nav a::after {
   display: none !important;
+  content: none !important;
 }
 
 .shell,
@@ -277,7 +296,8 @@ input[type="submit"] {
 }
 
 .button.primary,
-.main-nav a.active {
+.main-nav a.active,
+.site-header .main-nav a.active {
   border-color: rgba(231, 168, 41, .44) !important;
 }
 
@@ -324,6 +344,15 @@ body.subpage {
   .main-nav a {
     min-height: 34px !important;
     padding: 0 9px !important;
+    font-size: .76rem !important;
+  }
+
+  .site-header .main-nav a,
+  .site-header .main-nav a:hover,
+  .site-header .main-nav a.active {
+    min-height: 34px !important;
+    padding: 0 9px !important;
+    border-radius: 8px !important;
     font-size: .76rem !important;
   }
 
