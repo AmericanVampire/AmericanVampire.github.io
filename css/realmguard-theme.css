@@ -1,0 +1,333 @@
+/* Realm Guard unified site theme.
+   This file loads last on every page so header, footer, cards, buttons, and
+   page shells stay consistent across the main site and hosted server pages. */
+:root {
+  --rg-bg: #07101c;
+  --rg-bg-deep: #030811;
+  --rg-panel: #0f1d2e;
+  --rg-panel-2: #132236;
+  --rg-line: #29405a;
+  --rg-line-gold: rgba(231, 197, 109, .38);
+  --rg-gold: #e7c56d;
+  --rg-gold-2: #fff0b3;
+  --rg-text: #f6f8fb;
+  --rg-muted: #b9c3cf;
+  --rg-cyan: #71dce9;
+  --rg-width: 1180px;
+  --rg-header-height: 58px;
+  --rg-shield-size: 28px;
+  --rg-brand-size: .88rem;
+}
+
+html,
+body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+body {
+  margin: 0 !important;
+  color: var(--rg-text) !important;
+  background:
+    radial-gradient(circle at 78% 0, rgba(51, 134, 174, .14), transparent 34rem),
+    radial-gradient(circle at 12% 18%, rgba(231, 197, 109, .08), transparent 26rem),
+    var(--rg-bg) !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky !important;
+  inset: 0 0 auto !important;
+  z-index: 3000 !important;
+  height: var(--rg-header-height) !important;
+  min-height: var(--rg-header-height) !important;
+  background: rgba(3, 8, 17, .96) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .09) !important;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .18) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+}
+
+.nav-shell {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  height: var(--rg-header-height) !important;
+  min-height: var(--rg-header-height) !important;
+  margin: 0 auto !important;
+  padding: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 22px !important;
+}
+
+.brand {
+  display: flex !important;
+  align-items: center !important;
+  gap: 10px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: var(--rg-text) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: var(--rg-brand-size) !important;
+  font-weight: 800 !important;
+  line-height: 1 !important;
+  letter-spacing: .11em !important;
+  text-transform: uppercase !important;
+  text-decoration: none !important;
+  white-space: nowrap !important;
+}
+
+.brand-icon,
+.brand-mark {
+  width: var(--rg-shield-size) !important;
+  height: var(--rg-shield-size) !important;
+  flex: 0 0 var(--rg-shield-size) !important;
+  display: block !important;
+  object-fit: contain !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.brand-mark span {
+  display: none !important;
+}
+
+.main-nav {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  flex-wrap: wrap !important;
+  gap: 8px !important;
+  margin: 0 !important;
+}
+
+.main-nav a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 38px !important;
+  padding: 0 13px !important;
+  border: 1px solid transparent !important;
+  border-radius: 8px !important;
+  background: transparent !important;
+  color: #d5dde7 !important;
+  font: 800 .84rem/1 Inter, "Segoe UI", Arial, sans-serif !important;
+  text-decoration: none !important;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  background: rgba(231, 197, 109, .11) !important;
+  border-color: rgba(231, 197, 109, .22) !important;
+  color: var(--rg-gold-2) !important;
+}
+
+.main-nav a::after {
+  display: none !important;
+}
+
+.shell,
+.section-shell,
+.page-hero .shell,
+.page-hero .section-shell,
+.content-section .section-shell {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  max-width: var(--rg-width) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.realmguard-hero,
+.hero {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  min-height: auto !important;
+  aspect-ratio: 1680 / 910 !important;
+  margin: 28px auto 0 !important;
+  border: 1px solid var(--rg-line) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+  box-shadow: none !important;
+}
+
+.hero {
+  display: grid !important;
+  place-items: center !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.hero-content {
+  width: min(900px, calc(100% - 40px)) !important;
+  padding: 0 !important;
+}
+
+.hero-title,
+.page-hero h1,
+h1,
+h2,
+h3 {
+  letter-spacing: 0 !important;
+}
+
+.hero-title {
+  margin: 0 0 10px !important;
+  font-size: clamp(2.4rem, 7vw, 5.6rem) !important;
+}
+
+.hero-copy {
+  margin: 0 auto !important;
+  color: #e2e8ef !important;
+  font-size: clamp(.84rem, 1.7vw, 1.08rem) !important;
+}
+
+.page-hero {
+  padding: 72px 0 54px !important;
+  background: rgba(10, 23, 39, .74) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .08) !important;
+}
+
+.section,
+.home-section,
+.content-section {
+  padding: 72px 0 !important;
+  background: transparent !important;
+}
+
+.home-section {
+  margin-top: 0 !important;
+}
+
+.proof-band,
+.section-alt {
+  background: rgba(7, 15, 25, .66) !important;
+  border-top: 1px solid rgba(255, 255, 255, .06) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, .06) !important;
+}
+
+.card,
+.selection-card,
+.portal-card,
+.realm-card,
+.rule-card,
+.rules-notice,
+.rules-admin-note,
+.panel,
+.code-card,
+.effect,
+.enchantment-card,
+.enchantment-card-clean,
+.live-members-shell,
+.leaderboard-panel,
+.stat,
+.shop-card,
+.category-section,
+.shop-directory-card,
+.product-card,
+.timeline article,
+.info-list.raised,
+.cta-grid div {
+  border: 1px solid var(--rg-line) !important;
+  border-radius: 8px !important;
+  background: rgba(15, 29, 46, .94) !important;
+  box-shadow: none !important;
+}
+
+.portal-card::after {
+  background: linear-gradient(180deg, rgba(4, 10, 18, .10), rgba(4, 10, 18, .92)) !important;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="submit"] {
+  border-radius: 8px !important;
+}
+
+.button.primary,
+.main-nav a.active {
+  border-color: rgba(231, 197, 109, .36) !important;
+}
+
+.site-footer,
+.library-footer {
+  display: block !important;
+  width: 100% !important;
+  padding: 28px 20px !important;
+  margin: 0 !important;
+  color: #94a3b5 !important;
+  background: var(--rg-bg-deep) !important;
+  border-top: 1px solid rgba(255, 255, 255, .09) !important;
+  text-align: center !important;
+}
+
+body.subpage {
+  padding-top: 0 !important;
+}
+
+@media (max-width: 760px) {
+  .site-header {
+    position: static !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+
+  .nav-shell {
+    width: min(var(--rg-width), calc(100% - 28px)) !important;
+    height: auto !important;
+    min-height: var(--rg-header-height) !important;
+    padding: 10px 0 !important;
+    align-items: center !important;
+    gap: 14px !important;
+  }
+
+  .brand {
+    font-size: var(--rg-brand-size) !important;
+  }
+
+  .main-nav {
+    gap: 8px !important;
+  }
+
+  .main-nav a {
+    min-height: 34px !important;
+    padding: 0 9px !important;
+    font-size: .76rem !important;
+  }
+
+  .shell,
+  .section-shell,
+  .page-hero .shell,
+  .page-hero .section-shell,
+  .content-section .section-shell,
+  .realmguard-hero,
+  .hero {
+    width: min(var(--rg-width), calc(100% - 28px)) !important;
+  }
+
+  .realmguard-hero,
+  .hero {
+    margin-top: 18px !important;
+    aspect-ratio: 16 / 11 !important;
+  }
+
+  .page-hero,
+  .section,
+  .home-section,
+  .content-section {
+    padding: 54px 0 !important;
+  }
+}
