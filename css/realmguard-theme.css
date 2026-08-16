@@ -34,6 +34,8 @@ body {
   margin: 0 !important;
   color: var(--rg-text) !important;
   background:
+    linear-gradient(180deg, rgba(2, 7, 17, .30), rgba(2, 7, 17, .62)),
+    url("/assets/images/site-background.png") center top / cover fixed,
     radial-gradient(circle at 50% 0, rgba(45, 146, 218, .20), transparent 34rem),
     radial-gradient(circle at 76% 22%, rgba(43, 137, 210, .13), transparent 30rem),
     radial-gradient(circle at 15% 26%, rgba(242, 138, 29, .08), transparent 24rem),
@@ -414,6 +416,8 @@ input[type="submit"] {
 body.subpage {
   padding-top: 0 !important;
   background:
+    linear-gradient(180deg, rgba(2, 7, 17, .30), rgba(2, 7, 17, .62)),
+    url("/assets/images/site-background.png") center top / cover fixed,
     radial-gradient(circle at 50% 0, rgba(45, 146, 218, .20), transparent 34rem),
     radial-gradient(circle at 76% 22%, rgba(43, 137, 210, .13), transparent 30rem),
     radial-gradient(circle at 15% 26%, rgba(242, 138, 29, .08), transparent 24rem),
