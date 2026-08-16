@@ -71,23 +71,21 @@ document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date
 
 /* Google Sites + GitHub Pages hybrid navigation */
 document.addEventListener('DOMContentLoaded', () => {
-  const routes = {"home": "https://www.realmguard.net/", "realm": "https://www.realmguard.net/realm", "server-rules": "https://www.realmguard.net/server-rules", "castle-marketplace": "https://www.realmguard.net/castle-marketplace", "castle-games": "https://www.realmguard.net/castle-games", "realm-members": "https://www.realmguard.net/realm-members", "leaderboards": "https://www.realmguard.net/leaderboards", "quest-master": "https://www.realmguard.net/quest-master", "data-library": "https://www.realmguard.net/data-library"};
+  const routes = {"home": "/servers/expendables-server/the-perfect-realm/home/", "realm": "/servers/expendables-server/the-perfect-realm/realm/", "server-rules": "/servers/expendables-server/the-perfect-realm/server-rules/", "castle-marketplace": "/servers/expendables-server/the-perfect-realm/castle-marketplace/", "castle-games": "/servers/expendables-server/the-perfect-realm/castle-games/", "realm-members": "/servers/expendables-server/the-perfect-realm/realm-members/", "leaderboards": "/servers/expendables-server/the-perfect-realm/leaderboards/", "quest-master": "/servers/expendables-server/the-perfect-realm/quest-master/", "data-library": "/servers/expendables-server/the-perfect-realm/data-library/"};
 
   document.querySelectorAll('[data-site-path]').forEach(el => {
     const key = el.getAttribute('data-site-path');
     if (!routes[key]) return;
     el.setAttribute('href', routes[key]);
-    el.setAttribute('target', '_top');
+    el.removeAttribute('target');
   });
 
   document.querySelectorAll('[data-site-back]').forEach(button => {
     button.addEventListener('click', () => {
       if (document.referrer && document.referrer.includes('realmguard.net')) {
-        try { window.top.history.back(); return; } catch (e) {}
+        try { history.back(); return; } catch (e) {}
       }
-      try { window.top.location.href = routes.realm; } catch (e) {
-        window.location.href = routes.realm;
-      }
+      window.location.href = routes.realm;
     });
   });
 });
