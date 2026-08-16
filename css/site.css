@@ -1,0 +1,92 @@
+/* The Perfect Realm — shared site styles */
+
+
+/* V17: standardize secondary-page panels/cards to the site's compact border treatment. */
+.realm-card,
+.rule-card,
+.rules-notice,
+.rules-admin-note,
+.panel,
+.code-card,
+.effect,
+.enchantment-card,
+.enchantment-card-clean,
+.live-members-shell,
+.leaderboard-panel,
+.stat,
+.shop-card,
+.category-section,
+.shop-directory-card {
+  border: 1px solid #29405a !important;
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,.10) !important;
+}
+
+/* Keep nested controls visually lighter than their containing panel. */
+.panel input,
+.panel button,
+.panel select,
+.code-card input,
+.code-card button {
+  border-width: 1px !important;
+}
+
+/* Marketplace header divider stays thin and square with the compact card edge. */
+.shop-heading {
+  border-bottom: 1px solid #29405a !important;
+}
+
+
+
+html,
+body {
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box !important;
+}
+
+img,
+video,
+canvas,
+svg,
+iframe,
+table {
+  max-width: 100%;
+}
+
+
+
+/* Unified secondary-page Back button */
+.back-button,
+.back-btn,
+[data-back-button],
+a.back-button,
+button.back-button {
+  background: rgba(7,16,28,.92) !important;
+  color: #d8dee8 !important;
+  border: 1px solid rgba(201,162,39,.48) !important;
+  box-shadow: none !important;
+  transition: background-color .18s ease, color .18s ease, border-color .18s ease, transform .18s ease !important;
+}
+.back-button:hover,
+.back-btn:hover,
+[data-back-button]:hover,
+a.back-button:hover,
+button.back-button:hover {
+  background: #d4af37 !important;
+  color: #07101c !important;
+  border-color: #d4af37 !important;
+}
+
+
+
+/* GitHub Pages standalone-site refinements */
+html, body { width:100%; max-width:100%; overflow-x:hidden; }
+*, *::before, *::after { box-sizing:border-box; }
+img, video, canvas, svg, iframe, table { max-width:100%; }
