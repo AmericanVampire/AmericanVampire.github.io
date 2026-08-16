@@ -312,16 +312,3 @@ body{background:#07101c!important}
     height: 42px !important;
   }
 }
-
-
-/* Nested portal shell: Realm Guard global header above Expendables navigation */
-@media(min-width:761px){
-  .site-header{top:58px!important}
-  body.subpage{padding-top:134px!important}
-  body:not(.subpage) .hero{padding-top:58px}
-}
-@media(max-width:760px){
-  .site-header{position:static!important;top:auto!important}
-  body.subpage{padding-top:0!important}
-  body:not(.subpage) .hero{padding-top:0}
-}
