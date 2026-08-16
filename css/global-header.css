@@ -1,0 +1,57 @@
+
+/* Realm Guard global header used above every nested server portal. */
+:root{--rg-global-header-height:58px}
+.rg-global-header{
+  position:fixed;
+  inset:0 0 auto;
+  z-index:3000;
+  height:var(--rg-global-header-height);
+  background:#030811;
+  border-bottom:1px solid rgba(255,255,255,.09);
+}
+.rg-global-shell{
+  width:min(1180px,calc(100% - 40px));
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+}
+.rg-global-brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:#f6f8fb;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:.88rem;
+  font-weight:800;
+  letter-spacing:.11em;
+  text-transform:uppercase;
+  text-decoration:none;
+  white-space:nowrap;
+}
+.rg-global-brand img{width:28px;height:28px;object-fit:contain;display:block}
+.rg-global-nav{display:flex;align-items:center;gap:24px}
+.rg-global-nav a{
+  color:#cfd8e2;
+  text-decoration:none;
+  font:700 .86rem/1 Inter,"Segoe UI",Arial,sans-serif;
+  padding:20px 0 17px;
+  position:relative;
+}
+.rg-global-nav a:hover{color:#fff0b3}
+.rg-global-nav a::after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:10px;height:2px;
+  background:#e7c56d;
+  transform:scaleX(0);
+  transition:transform .18s ease;
+}
+.rg-global-nav a:hover::after{transform:scaleX(1)}
+@media(max-width:760px){
+  .rg-global-header{position:static;height:auto}
+  .rg-global-shell{min-height:58px;padding:10px 0;align-items:center}
+  .rg-global-nav{display:none}
+}
