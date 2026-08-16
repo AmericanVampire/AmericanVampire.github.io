@@ -17,3 +17,19 @@ a{color:inherit;text-decoration:none} img{max-width:100%}
 .site-footer{border-top:1px solid rgba(255,255,255,.08);padding:28px 0;color:#8391a0;text-align:center;font-size:.86rem}.page-hero{padding:74px 0 44px}.page-hero h1{font-size:clamp(2.6rem,6vw,5rem);margin-bottom:16px}.breadcrumb{color:#93a2b1;font-size:.82rem;margin-bottom:16px}.breadcrumb a{color:var(--gold)}
 .selection-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.selection-card{border:1px solid #29405a;border-radius:10px;background:#0c1725;padding:26px;min-height:260px;display:flex;flex-direction:column}.selection-card h2{font-size:2rem;margin:10px 0}.selection-card p{color:#aeb9c6;line-height:1.65}.selection-card .button{margin-top:auto;width:max-content}.badge{display:inline-block;width:max-content;border:1px solid #34516d;border-radius:999px;padding:5px 9px;color:#bcd2e5;font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em}
 @media(max-width:900px){.hero-grid,.split{grid-template-columns:1fr}.card-grid,.selection-grid{grid-template-columns:1fr}.main-nav{display:none}.hero{padding-top:70px}}
+
+/* Realm Guard / Expendables brand artwork */
+.realmguard-art{padding:18px;overflow:hidden}
+.realmguard-banner{display:block;width:100%;border:1px solid #263e57;border-radius:8px}
+.realmguard-product-row{display:grid;grid-template-columns:145px 1fr;gap:20px;align-items:center;padding:20px 8px 4px}
+.realmguard-helmet{display:block;width:145px;filter:drop-shadow(0 12px 24px rgba(0,0,0,.4))}
+.realmguard-product-copy h3{font-size:1.45rem;margin:5px 0 8px}
+.realmguard-product-copy p{margin:0;color:#aeb9c6;line-height:1.6;font-size:.92rem}
+.server-brand-lockup{display:flex;align-items:center;gap:22px}
+.expendables-server-logo{width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
+@media(max-width:650px){
+  .realmguard-product-row{grid-template-columns:1fr;text-align:center}
+  .realmguard-helmet{margin:auto;width:125px}
+  .server-brand-lockup{align-items:flex-start}
+  .expendables-server-logo{width:70px;height:70px}
+}
