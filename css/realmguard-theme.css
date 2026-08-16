@@ -217,6 +217,67 @@ h3 {
   font-size: clamp(2.4rem, 7vw, 5.6rem) !important;
 }
 
+.section-head .kicker,
+.final-cta .kicker,
+.product-intro .kicker,
+.product-card .kicker,
+.home-section .section-kicker,
+.page-hero .section-kicker {
+  display: block !important;
+  margin: 0 0 10px !important;
+  color: var(--rg-gold) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: clamp(1.75rem, 3.4vw, 2.85rem) !important;
+  font-weight: 800 !important;
+  line-height: 1.05 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.section-head > h2,
+.final-cta h2,
+.product-intro h2,
+.home-section .section-title {
+  max-width: 860px !important;
+  margin: 0 0 14px !important;
+  color: var(--rg-text) !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+  font-size: 1.02rem !important;
+  font-weight: 500 !important;
+  line-height: 1.72 !important;
+}
+
+.product-card .kicker {
+  font-size: 1.35rem !important;
+}
+
+.card .eyebrow,
+.realm-card .section-kicker,
+.rule-card .section-kicker,
+.timeline span {
+  display: block !important;
+  margin: 0 0 8px !important;
+  color: var(--rg-gold) !important;
+  font-family: Georgia, "Times New Roman", serif !important;
+  font-size: 1.35rem !important;
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
+}
+
+.card h3,
+.realm-card h2,
+.rule-card h2,
+.timeline h3 {
+  margin: 0 0 10px !important;
+  color: var(--rg-text) !important;
+  font-family: Inter, "Segoe UI", Arial, sans-serif !important;
+  font-size: .98rem !important;
+  font-weight: 600 !important;
+  line-height: 1.55 !important;
+}
+
 .hero-copy {
   margin: 0 auto !important;
   color: #e2e8ef !important;
@@ -297,12 +358,45 @@ button,
 input[type="button"],
 input[type="submit"] {
   border-radius: 8px !important;
+  box-shadow: none !important;
 }
 
 .button.primary,
 .main-nav a.active,
 .site-header .main-nav a.active {
   border-color: rgba(231, 168, 41, .44) !important;
+}
+
+.product-helmet,
+.final-cta > img,
+.realmguard-helmet,
+.expendables-server-logo {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.final-cta > img,
+.product-card img,
+.product-helmet {
+  border: 1px solid var(--rg-line) !important;
+  border-radius: 8px !important;
+  background: linear-gradient(145deg, rgba(12, 31, 51, .94), rgba(5, 16, 29, .96)) !important;
+}
+
+.disabled-button,
+.button.disabled-button {
+  opacity: 1 !important;
+  color: var(--rg-gold-2) !important;
+  background: rgba(12, 31, 51, .72) !important;
+  border: 1px solid var(--rg-line) !important;
+  box-shadow: none !important;
+  cursor: default !important;
+}
+
+.disabled-button:hover,
+.button.disabled-button:hover {
+  transform: none !important;
+  border-color: var(--rg-line) !important;
 }
 
 .site-footer,
