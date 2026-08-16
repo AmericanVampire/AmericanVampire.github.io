@@ -76,11 +76,13 @@ h3{line-height:1.1}
 p{color:var(--muted);line-height:1.72}
 .realmguard-hero{
   position:relative;
-  min-height:calc(100svh - var(--header-height));
-  width:100%;
-  display:flex;
-  align-items:stretch;
+  width:min(1180px,calc(100% - 36px));
+  aspect-ratio:1680/910;
+  min-height:0;
+  margin:28px auto 0;
   overflow:hidden;
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:8px;
   background-image:url('/assets/images/realm-guard-banner.png');
   background-position:center center;
   background-size:cover;
@@ -219,16 +221,18 @@ p{color:var(--muted);line-height:1.72}
 .server-brand-lockup{display:flex;align-items:center;gap:22px}
 .expendables-server-logo{width:92px;height:92px;object-fit:contain;filter:drop-shadow(0 10px 22px rgba(0,0,0,.35))}
 @media(max-width:980px){
-  .main-nav{display:none}
+  .main-nav{display:flex}
   .split,.final-cta{grid-template-columns:1fr}
   .card-grid,.selection-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   .timeline,.cta-grid,.proof-grid{grid-template-columns:1fr 1fr}
   .proof-grid div,.proof-grid div:last-child{border-right:0}
 }
 @media(max-width:650px){
-  .nav-shell{min-height:var(--header-height);width:min(100% - 28px,1240px)}
+  .nav-shell{min-height:var(--header-height);width:min(100% - 28px,1240px);gap:14px}
   .brand{letter-spacing:.11em;font-size:var(--brand-font-size)}
   .realmguard-hero{background-position:center center}
+  .main-nav{gap:10px}
+  .main-nav a{padding:8px 0;font-size:.78rem}
   h1{font-size:clamp(3rem,16vw,4.8rem)}
   .inline-actions{align-items:stretch}
   .button{width:100%;padding:0 14px;text-align:center}
