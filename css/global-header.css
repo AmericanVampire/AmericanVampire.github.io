@@ -1,6 +1,6 @@
 
-/* Realm Guard global header used above every nested server portal. */
-:root{--rg-global-header-height:58px}
+/* Locked Realm Guard header sizing shared by nested server pages. */
+:root{--rg-global-header-height:58px;--brand-icon-size:28px;--brand-font-size:.88rem}
 .rg-global-header{
   position:fixed;
   inset:0 0 auto;
@@ -67,4 +67,78 @@ body:has(.rg-global-header):not(.subpage) .hero{
   .rg-global-nav{display:none}
   body:has(.rg-global-header).subpage{padding-top:0!important}
   body:has(.rg-global-header):not(.subpage) .hero{padding-top:0!important}
+}
+
+/* Final lock for Perfect Realm pages. This file loads after their page CSS. */
+.site-header{
+  height:var(--rg-global-header-height)!important;
+  min-height:var(--rg-global-header-height)!important;
+}
+.site-header .nav-shell{
+  height:var(--rg-global-header-height)!important;
+  min-height:var(--rg-global-header-height)!important;
+  width:min(1180px,calc(100% - 40px))!important;
+  padding:0!important;
+  align-items:center!important;
+}
+.site-header .brand,
+.site-header .rg-global-brand{
+  gap:10px!important;
+  font-family:Georgia,"Times New Roman",serif!important;
+  font-size:var(--brand-font-size)!important;
+  font-weight:800!important;
+  line-height:1!important;
+  letter-spacing:.11em!important;
+  text-transform:uppercase!important;
+}
+.site-header .brand-icon,
+.site-header .brand-mark,
+.rg-global-brand img{
+  width:var(--brand-icon-size)!important;
+  height:var(--brand-icon-size)!important;
+  flex:0 0 var(--brand-icon-size)!important;
+  object-fit:contain!important;
+}
+.site-header .main-nav{
+  display:flex!important;
+  align-items:center!important;
+  gap:26px!important;
+}
+.site-header .main-nav a{
+  position:relative!important;
+  padding:20px 0 18px!important;
+  border:0!important;
+  border-radius:0!important;
+  background:transparent!important;
+  color:#d5dde7!important;
+  font:700 .86rem/1 Inter,"Segoe UI",Arial,sans-serif!important;
+}
+.site-header .main-nav a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  right:0;
+  bottom:10px;
+  height:2px;
+  background:#e7c56d;
+  transform:scaleX(0);
+  transform-origin:center;
+  transition:transform .18s ease;
+}
+.site-header .main-nav a:hover,
+.site-header .main-nav a.active{
+  color:#fff0b3!important;
+}
+.site-header .main-nav a:hover::after,
+.site-header .main-nav a.active::after{
+  transform:scaleX(1);
+}
+body.subpage{
+  padding-top:var(--rg-global-header-height)!important;
+}
+@media(max-width:760px){
+  .site-header{position:static!important;height:auto!important;min-height:0!important}
+  .site-header .nav-shell{height:auto!important;min-height:var(--rg-global-header-height)!important;padding:10px 0!important}
+  .site-header .main-nav{display:none!important}
+  body.subpage{padding-top:0!important}
 }

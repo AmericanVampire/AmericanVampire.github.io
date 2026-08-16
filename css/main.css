@@ -11,6 +11,9 @@
   --cyan:#70dbe8;
   --green:#7ee2a8;
   --shadow:0 24px 70px rgba(0,0,0,.34);
+  --header-height:58px;
+  --brand-icon-size:28px;
+  --brand-font-size:.88rem;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -36,7 +39,7 @@ img{max-width:100%}
 }
 .nav-shell{
   width:min(1240px,calc(100% - 36px));
-  min-height:72px;
+  min-height:var(--header-height);
   margin:auto;
   display:flex;
   align-items:center;
@@ -46,14 +49,15 @@ img{max-width:100%}
 .brand{
   display:flex;
   align-items:center;
-  gap:12px;
+  gap:10px;
   font-family:Georgia,"Times New Roman",serif;
   font-weight:800;
-  letter-spacing:.12em;
+  font-size:var(--brand-font-size);
+  letter-spacing:.11em;
   text-transform:uppercase;
   white-space:nowrap;
 }
-.brand-mark{width:34px;height:34px;object-fit:contain}
+.brand-mark{width:var(--brand-icon-size);height:var(--brand-icon-size);object-fit:contain;flex:0 0 var(--brand-icon-size)}
 .main-nav{display:flex;align-items:center;gap:6px;flex-wrap:wrap;justify-content:flex-end}
 .main-nav a{
   padding:10px 12px;
@@ -72,7 +76,7 @@ h3{line-height:1.1}
 p{color:var(--muted);line-height:1.72}
 .realmguard-hero{
   position:relative;
-  min-height:calc(100svh - 72px);
+  min-height:calc(100svh - var(--header-height));
   width:100%;
   display:flex;
   align-items:stretch;
@@ -222,8 +226,8 @@ p{color:var(--muted);line-height:1.72}
   .proof-grid div,.proof-grid div:last-child{border-right:0}
 }
 @media(max-width:650px){
-  .nav-shell{min-height:64px;width:min(100% - 28px,1240px)}
-  .brand{letter-spacing:.08em;font-size:.92rem}
+  .nav-shell{min-height:var(--header-height);width:min(100% - 28px,1240px)}
+  .brand{letter-spacing:.11em;font-size:var(--brand-font-size)}
   .realmguard-hero{background-position:center center}
   h1{font-size:clamp(3rem,16vw,4.8rem)}
   .inline-actions{align-items:stretch}
