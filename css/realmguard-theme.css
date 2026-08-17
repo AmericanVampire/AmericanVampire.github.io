@@ -375,6 +375,25 @@ h3 {
   padding: 0 24px !important;
 }
 
+#availability.section-alt {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  margin: 0 auto 72px !important;
+  padding: 58px 0 !important;
+  border: 1px solid rgba(75, 142, 194, .38) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  background:
+    linear-gradient(90deg, rgba(4, 12, 23, .82), rgba(8, 29, 50, .74), rgba(4, 12, 23, .82)) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+#availability.section-alt .shell {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 24px !important;
+}
+
 .proof-grid div {
   border-left-color: rgba(75, 142, 194, .24) !important;
 }
@@ -647,6 +666,74 @@ body.subpage .market-main::before,
 body.subpage .market-main::after {
   content: none !important;
   display: none !important;
+}
+
+/* Restore Data Library folder tabs. These are navigation tabs, not action buttons. */
+html body .site-nav {
+  display: flex !important;
+  align-items: flex-end !important;
+  gap: 6px !important;
+  margin: 0 0 -1px 12px !important;
+  padding: 0 !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+html body .site-nav .page-button {
+  min-height: 38px !important;
+  padding: 0 44px !important;
+  border: 1px solid var(--rg-line) !important;
+  border-bottom-color: var(--rg-line) !important;
+  border-radius: 8px 8px 0 0 !important;
+  background: linear-gradient(180deg, rgba(16, 41, 65, .92), rgba(8, 24, 42, .94)) !important;
+  color: #cbd5e1 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+html body .site-nav .page-button:hover {
+  background: linear-gradient(180deg, rgba(20, 52, 82, .98), rgba(10, 31, 54, .98)) !important;
+  border-color: var(--rg-line) !important;
+  border-bottom-color: var(--rg-line) !important;
+  color: var(--rg-text) !important;
+  transform: none !important;
+}
+
+html body .site-nav .page-button.active {
+  background: linear-gradient(145deg, rgba(12, 31, 51, .94), rgba(5, 16, 29, .96)) !important;
+  border-color: var(--rg-line) !important;
+  border-bottom-color: transparent !important;
+  color: var(--rg-text) !important;
+}
+
+/* Make Text Effects copy controls match the page action buttons. */
+html body .effect [data-copy] {
+  min-width: 108px !important;
+  min-height: 38px !important;
+  padding: 0 18px !important;
+}
+
+/* Castle Marketplace: kill pill styling without damaging cards or tables. */
+html body .shop-card .shop-category,
+html body .shop-card .shop-count {
+  display: none !important;
+}
+
+html body .shop-card .type,
+html body .shop-card .transaction-badge,
+html body .shop-card .type-badge,
+html body .shop-card .badge {
+  display: inline !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  font: inherit !important;
+  letter-spacing: 0 !important;
+  text-transform: none !important;
 }
 
 .reference-page .panel,
