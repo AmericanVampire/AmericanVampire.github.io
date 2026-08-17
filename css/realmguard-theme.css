@@ -709,9 +709,19 @@ html body .site-nav .page-button.active {
 
 /* Make Text Effects copy controls match the page action buttons. */
 html body .effect [data-copy] {
-  min-width: 108px !important;
+  width: 100% !important;
+  min-width: 0 !important;
   min-height: 38px !important;
   padding: 0 18px !important;
+  margin-top: 8px !important;
+}
+
+html body .code-card .preview-code {
+  color: var(--rg-text) !important;
+}
+
+html body .code-card .preview-sample {
+  font-weight: inherit !important;
 }
 
 /* Castle Marketplace: kill pill styling without damaging cards or tables. */

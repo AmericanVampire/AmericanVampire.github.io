@@ -53,10 +53,9 @@ const colors = [
           const card = document.createElement("article");
           card.className = "code-card";
           card.innerHTML = `
-            <div class="preview" style="color:${hex}">§${code} Sample Text</div>
+            <div class="preview"><span class="preview-code">§${code}</span> <span class="preview-sample" style="color:${hex}">Sample Text</span></div>
             <div class="details">
               <div class="row"><span class="name">${name}</span><code>§${code}</code></div>
-              <div class="row small"><span>Preview hex</span><code>${hex}</code></div>
               <button type="button" data-copy="§${code}">Copy §${code}</button>
             </div>`;
           grid.appendChild(card);
