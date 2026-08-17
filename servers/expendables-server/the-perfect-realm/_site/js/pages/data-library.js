@@ -56,7 +56,6 @@ const colors = [
             <div class="preview" style="color:${hex}">§${code} Sample Text</div>
             <div class="details">
               <div class="row"><span class="name">${name}</span><code>§${code}</code></div>
-              <div class="row small"><span>Unicode escape</span><code>\\u00A7${code}</code></div>
               <div class="row small"><span>Preview hex</span><code>${hex}</code></div>
               <button type="button" data-copy="§${code}">Copy §${code}</button>
             </div>`;
@@ -121,7 +120,7 @@ const colors = [
     document.getElementById("copySection").addEventListener("click", () => copyText("§"));
     document.getElementById("copyComposer").addEventListener("click", () => copyText(composerInput.value));
 
-    document.querySelectorAll(".example [data-copy]").forEach(btn => {
+    document.querySelectorAll(".effect [data-copy]").forEach(btn => {
       btn.addEventListener("click", () => copyText(btn.dataset.copy));
     });
 
