@@ -356,6 +356,25 @@ h3 {
   max-width: none !important;
 }
 
+#features.section-alt {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  margin: 0 auto 72px !important;
+  padding: 58px 0 !important;
+  border: 1px solid rgba(75, 142, 194, .38) !important;
+  border-radius: 14px !important;
+  overflow: hidden !important;
+  background:
+    linear-gradient(90deg, rgba(4, 12, 23, .82), rgba(8, 29, 50, .74), rgba(4, 12, 23, .82)) !important;
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
+}
+
+#features.section-alt .shell {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 24px !important;
+}
+
 .proof-grid div {
   border-left-color: rgba(75, 142, 194, .24) !important;
 }
@@ -613,6 +632,21 @@ body.subpage {
     radial-gradient(circle at 15% 26%, rgba(242, 138, 29, .08), transparent 24rem),
     linear-gradient(180deg, #071727 0%, #06111f 48%, #020711 100%),
     var(--rg-bg) !important;
+}
+
+body.subpage .mc-content,
+body.subpage .market-main {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+body.subpage .mc-content::before,
+body.subpage .mc-content::after,
+body.subpage .market-main::before,
+body.subpage .market-main::after {
+  content: none !important;
+  display: none !important;
 }
 
 .reference-page .panel,

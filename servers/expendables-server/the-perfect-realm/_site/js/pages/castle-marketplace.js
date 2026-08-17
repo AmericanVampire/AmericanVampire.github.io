@@ -45,12 +45,11 @@ function setExpanded(card, expanded) {
 
 cards.forEach(card => {
   const shopKey = card.dataset.shop;
-  const [category, categoryLabel] = categoryMap[shopKey] || ['specialty', 'Specialty & Services'];
+  const [category] = categoryMap[shopKey] || ['specialty', 'Specialty & Services'];
   card.dataset.category = category;
 
   const heading = card.querySelector('.shop-heading');
   const title = heading.querySelector('h2');
-  const oldCount = heading.querySelector('span');
   const rows = [...card.querySelectorAll('tbody tr')];
   const itemNames = rows.map(row => row.children[1]?.textContent.trim()).filter(Boolean);
   const uniqueNames = [...new Set(itemNames)];
@@ -66,12 +65,10 @@ cards.forEach(card => {
     <div class="shop-heading-main">
       <div class="shop-heading-top">
         <h2>${title.textContent}</h2>
-        <span class="shop-category">${categoryLabel}</span>
       </div>
       <div class="shop-overview">${overview}</div>
     </div>
     <div class="shop-heading-side">
-      <span class="shop-count">${oldCount.textContent}</span>
       <span class="shop-chevron" aria-hidden="true"></span>
     </div>`;
 
