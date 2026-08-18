@@ -763,6 +763,74 @@ html body main .reference-page section.panel.panel {
   border-top-color: var(--rg-line) !important;
 }
 
+.privacy-section {
+  width: min(var(--rg-width), calc(100% - 40px)) !important;
+  margin: 48px auto 72px !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+.privacy-document {
+  padding: clamp(24px, 4vw, 48px) !important;
+  border: 1px solid var(--rg-line) !important;
+  border-radius: 14px !important;
+  background:
+    linear-gradient(145deg, rgba(12, 31, 51, .94), rgba(5, 16, 29, .96)) !important;
+  box-shadow: none !important;
+}
+
+.privacy-document h2,
+.privacy-document h3 {
+  color: var(--rg-gold) !important;
+}
+
+.privacy-document h2 {
+  margin: 34px 0 12px !important;
+  font-size: clamp(1.35rem, 2.4vw, 2rem) !important;
+  line-height: 1.15 !important;
+}
+
+.privacy-document .privacy-title-source {
+  margin-top: 0 !important;
+}
+
+.privacy-document h3 {
+  margin: 24px 0 8px !important;
+  font-size: 1.08rem !important;
+  line-height: 1.25 !important;
+}
+
+.privacy-document p,
+.privacy-document li {
+  color: #d8e2ee !important;
+  font-size: .98rem !important;
+  line-height: 1.72 !important;
+}
+
+.privacy-document p {
+  margin: 0 0 14px !important;
+}
+
+.privacy-document ul,
+.privacy-document ol {
+  margin: 0 0 18px 1.2rem !important;
+  padding: 0 !important;
+}
+
+.privacy-document li {
+  margin: 6px 0 !important;
+}
+
+.privacy-document strong {
+  color: var(--rg-text) !important;
+}
+
+.privacy-document a {
+  color: var(--rg-cyan) !important;
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+
 @media (max-width: 760px) {
   .site-header {
     position: static !important;
