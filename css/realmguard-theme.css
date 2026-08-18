@@ -689,6 +689,58 @@ html body .button.disabled-button:hover {
   cursor: default !important;
 }
 
+.store-button,
+html body .store-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 16px !important;
+  min-height: 86px !important;
+  width: min(100%, 420px) !important;
+  padding: 14px 24px !important;
+  border: 1px solid rgba(255, 255, 255, .08) !important;
+  border-radius: 14px !important;
+  background: linear-gradient(180deg, #232323, #1d1d1d) !important;
+  color: #f8f8f8 !important;
+  box-shadow: none !important;
+  text-decoration: none !important;
+  transition: border-color .16s ease, background .16s ease, transform .16s ease !important;
+}
+
+.store-button:hover,
+html body .store-button:hover {
+  background: linear-gradient(180deg, #2a2a2a, #202020) !important;
+  border-color: rgba(231, 197, 109, .48) !important;
+  color: #fff !important;
+  transform: translateY(-1px) !important;
+}
+
+.store-button img {
+  width: 62px !important;
+  height: 62px !important;
+  flex: 0 0 62px !important;
+  object-fit: contain !important;
+}
+
+.store-button span {
+  display: grid !important;
+  gap: 2px !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.store-button small {
+  color: #d7d7d7 !important;
+  font: 500 1.42rem/1.05 Inter, "Segoe UI", Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+}
+
+.store-button strong {
+  color: #ffffff !important;
+  font: 800 2.2rem/1 Inter, "Segoe UI", Arial, sans-serif !important;
+  letter-spacing: 0 !important;
+  white-space: nowrap !important;
+}
+
 .site-footer,
 .library-footer {
   display: block !important;
@@ -986,6 +1038,29 @@ html body main .reference-page section.panel.panel {
 
   .subscription-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  .store-button,
+  html body .store-button {
+    min-height: 72px !important;
+    width: 100% !important;
+    gap: 12px !important;
+    padding: 12px 14px !important;
+    border-radius: 12px !important;
+  }
+
+  .store-button img {
+    width: 48px !important;
+    height: 48px !important;
+    flex-basis: 48px !important;
+  }
+
+  .store-button small {
+    font-size: 1rem !important;
+  }
+
+  .store-button strong {
+    font-size: clamp(1.35rem, 7vw, 1.72rem) !important;
   }
 
   .home-footer {
