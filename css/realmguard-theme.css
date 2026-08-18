@@ -693,17 +693,17 @@ html body .button.disabled-button:hover {
 html body .store-button {
   display: inline-flex !important;
   align-items: center !important;
-  gap: 16px !important;
-  min-height: 86px !important;
-  width: min(100%, 420px) !important;
-  padding: 14px 24px !important;
+  gap: 12px !important;
+  min-height: 70px !important;
+  width: min(100%, 330px) !important;
+  padding: 11px 18px !important;
   border: 1px solid rgba(255, 255, 255, .08) !important;
-  border-radius: 14px !important;
+  border-radius: 13px !important;
   background: linear-gradient(180deg, #232323, #1d1d1d) !important;
   color: #f8f8f8 !important;
-  box-shadow: none !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .05), 0 10px 20px rgba(0, 0, 0, .18) !important;
   text-decoration: none !important;
-  transition: border-color .16s ease, background .16s ease, transform .16s ease !important;
+  transition: border-color .16s ease, background .16s ease, transform .08s ease, box-shadow .08s ease !important;
 }
 
 .store-button:hover,
@@ -714,10 +714,19 @@ html body .store-button:hover {
   transform: translateY(-1px) !important;
 }
 
+.store-button:active,
+html body .store-button:active,
+.store-button.is-pressed,
+html body .store-button.is-pressed {
+  transform: translateY(1px) scale(.985) !important;
+  background: linear-gradient(180deg, #1d1d1d, #171717) !important;
+  box-shadow: inset 0 3px 8px rgba(0, 0, 0, .42), 0 3px 8px rgba(0, 0, 0, .16) !important;
+}
+
 .store-button img {
-  width: 62px !important;
-  height: 62px !important;
-  flex: 0 0 62px !important;
+  width: 46px !important;
+  height: 46px !important;
+  flex: 0 0 46px !important;
   object-fit: contain !important;
 }
 
@@ -730,13 +739,13 @@ html body .store-button:hover {
 
 .store-button small {
   color: #d7d7d7 !important;
-  font: 500 1.42rem/1.05 Inter, "Segoe UI", Arial, sans-serif !important;
+  font: 500 1.05rem/1.05 Inter, "Segoe UI", Arial, sans-serif !important;
   letter-spacing: 0 !important;
 }
 
 .store-button strong {
   color: #ffffff !important;
-  font: 800 2.2rem/1 Inter, "Segoe UI", Arial, sans-serif !important;
+  font: 800 1.58rem/1 Inter, "Segoe UI", Arial, sans-serif !important;
   letter-spacing: 0 !important;
   white-space: nowrap !important;
 }
@@ -1042,25 +1051,25 @@ html body main .reference-page section.panel.panel {
 
   .store-button,
   html body .store-button {
-    min-height: 72px !important;
+    min-height: 66px !important;
     width: 100% !important;
-    gap: 12px !important;
-    padding: 12px 14px !important;
+    gap: 10px !important;
+    padding: 10px 12px !important;
     border-radius: 12px !important;
   }
 
   .store-button img {
-    width: 48px !important;
-    height: 48px !important;
-    flex-basis: 48px !important;
+    width: 42px !important;
+    height: 42px !important;
+    flex-basis: 42px !important;
   }
 
   .store-button small {
-    font-size: 1rem !important;
+    font-size: .9rem !important;
   }
 
   .store-button strong {
-    font-size: clamp(1.35rem, 7vw, 1.72rem) !important;
+    font-size: clamp(1.18rem, 6.4vw, 1.48rem) !important;
   }
 
   .home-footer {

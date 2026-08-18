@@ -27,3 +27,15 @@ document.querySelectorAll('[data-site-back]').forEach(button => {
     window.location.href = button.getAttribute('data-fallback') || '/';
   });
 });
+
+document.querySelectorAll('.store-button').forEach(button => {
+  button.addEventListener('pointerdown', () => {
+    button.classList.add('is-pressed');
+  });
+
+  ['pointerup', 'pointercancel', 'pointerleave'].forEach(eventName => {
+    button.addEventListener(eventName, () => {
+      window.setTimeout(() => button.classList.remove('is-pressed'), 90);
+    });
+  });
+});
