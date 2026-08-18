@@ -20,7 +20,7 @@
         <img class="brand-mark" src="/assets/images/realm-guard-icon.png" alt="">
         <span>Realm Guard</span>
       </a>
-      <nav class="main-nav" aria-label="Main navigation"><a class="active" href="/">Home</a><a href="/servers/">Server Portal</a></nav>
+      <nav class="main-nav" aria-label="Main navigation"><a class="active" href="/">Home</a></nav>
     </div>
   </header>
 
@@ -32,7 +32,7 @@
     <section class="proof-band">
       <div class="shell proof-grid">
         <div><strong>No Resource Packs</strong><span>No required behavior packs, add-ons, or Realm modifications.</span></div>
-        <div><strong>Achievement Friendly</strong><span>Monitoring and administration do not force cheats on.</span></div>
+        <div><strong>Achievement Friendly</strong><span>Realm Guard does not disable achievements on its own.</span></div>
         <div><strong>Local-First</strong><span>Realm records, logs, notes, exports, and archive history stay on your PC.</span></div>
       </div>
     </section>
@@ -44,6 +44,9 @@
           <h2>Monitor players, review activity, manage members, run commands, download Realm backups, and maintain a live Discord roster from one dedicated Windows application.</h2>
           <p>Realm Guard gives Realm owners and administrators a dedicated control center for operating a Minecraft Bedrock Realm. It replaces scattered screenshots, chat history, handwritten notes, and separate tools with one organized administration workflow.</p>
           <p>Realm Guard connects through authorized Microsoft and Xbox services and observes the Realm through a dedicated Minecraft account. An optional Realm owner account unlocks owner-level management features.</p>
+          <div class="inline-actions">
+            <a class="button primary" href="https://apps.microsoft.com/detail/9PJZ9XZK4JRQ">Get Realm Guard From Microsoft Store</a>
+          </div>
         </div>
         <div class="product-card">
           <img class="product-helmet" src="/assets/images/realm-guard-icon.png" alt="Realm Guard shield mark">
@@ -51,7 +54,7 @@
             <div class="kicker">Your Realm. Your Control.</div>
             <ul class="check-list">
               <li>Native Realm connection through an authorized observer account.</li>
-              <li>No publisher-controlled customer database for Realm records.</li>
+              <li>Realm records are stored locally in a private SQLite database on your PC.</li>
               <li>Owner-level features available when an authorized Realm owner account is connected.</li>
               <li>Windows 10 and Windows 11 administration console.</li>
             </ul>
@@ -205,42 +208,12 @@
       </div>
     </section>
 
-    <section class="section section-alt home-panel">
-      <div class="shell">
-        <div class="section-head">
-          <div class="kicker">Privacy And Requirements</div>
-          <h2>Your Realm data stays yours, and the requirements are straightforward.</h2>
-          <p>Realm Guard contains no advertising, third-party analytics, publisher telemetry, or cloud synchronization.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="eyebrow">Private Local Storage</div>
-            <h3>Stored On Your PC</h3>
-            <p>Realm records, player information, labels, administrator notes, logs, moderation history, commands, export history, archive history, and settings remain in private application storage.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Connected Services</div>
-            <h3>Microsoft, Xbox, Discord</h3>
-            <p>Microsoft and Xbox process authentication, Realm access, and Store licensing. Discord receives only the live Realm information sent to the authorized server and channel.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Requirements</div>
-            <h3>What You Need</h3>
-            <p>Use a Windows 10 or Windows 11 PC, an active Minecraft Bedrock Realm, a Microsoft account with Realm access, internet access, and an active Realm Guard Microsoft Store subscription.</p>
-          </article>
-        </div>
-        <div class="inline-actions">
-          <a class="button" href="/privacy/">Read Privacy Policy</a>
-        </div>
-      </div>
-    </section>
-
     <section class="section home-panel" id="subscriptions">
       <div class="shell">
         <div class="section-head compact">
           <div class="kicker">Take Control Of Your Realm</div>
           <h2>Bring live monitoring, player administration, moderation, commands, Realm management, local backups, organized logs, exports, and Discord status into one dedicated console.</h2>
-          <p>No resource packs. No required add-ons. No forced cheats. Achievements remain available.</p>
+          <p>Realm Guard does not require cheats, resource packs, or add-ons, so it does not disable achievements on its own.</p>
         </div>
         <div class="cta-grid">
           <div><strong>Complete Console</strong><span>Home dashboard, player records, moderation, logs, commands, Realm management, backups, exports, Discord, and live monitoring.</span></div>
@@ -275,9 +248,39 @@
         </div>
       </div>
     </section>
+
+    <section class="section section-alt home-panel">
+      <div class="shell">
+        <div class="section-head">
+          <div class="kicker">Privacy And Requirements</div>
+          <h2>Your Realm data stays yours, and the requirements are straightforward.</h2>
+          <p>Realm Guard contains no advertising, third-party analytics, publisher telemetry, or cloud synchronization.</p>
+        </div>
+        <div class="card-grid">
+          <article class="card">
+            <div class="eyebrow">Private Local Storage</div>
+            <h3>Stored On Your PC</h3>
+            <p>Realm records, player information, labels, administrator notes, logs, moderation history, commands, export history, archive history, and settings remain in private application storage.</p>
+          </article>
+          <article class="card">
+            <div class="eyebrow">Connected Services</div>
+            <h3>Microsoft, Xbox, Discord</h3>
+            <p>Microsoft and Xbox process authentication, Realm access, and Store licensing. Discord receives only the live Realm information sent to the authorized server and channel.</p>
+          </article>
+          <article class="card">
+            <div class="eyebrow">Requirements</div>
+            <h3>What You Need</h3>
+            <p>Use a Windows 10 or Windows 11 PC, an active Minecraft Bedrock Realm, a Microsoft account with Realm access, internet access, and an active Realm Guard Microsoft Store subscription.</p>
+          </article>
+        </div>
+        <div class="inline-actions">
+          <a class="button" href="/privacy/">Read Privacy Policy</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">Realm Guard © 2026</footer>
+  <footer class="site-footer home-footer"><span>Realm Guard © 2026</span><a href="/servers/">Community Servers Portal</a></footer>
   <script src="/js/main.js"></script>
 </body>
 </html>

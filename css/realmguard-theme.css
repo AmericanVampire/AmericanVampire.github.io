@@ -701,6 +701,25 @@ html body .button.disabled-button:hover {
   text-align: center !important;
 }
 
+.home-footer {
+  position: relative !important;
+}
+
+.home-footer a {
+  position: absolute !important;
+  top: 50% !important;
+  right: max(20px, calc((100vw - var(--rg-width)) / 2)) !important;
+  transform: translateY(-50%) !important;
+  color: rgba(148, 163, 181, .42) !important;
+  font-size: .76rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+}
+
+.home-footer a:hover {
+  color: rgba(231, 197, 109, .82) !important;
+}
+
 body.subpage {
   padding-top: 0 !important;
   background:
@@ -904,6 +923,7 @@ html body main .reference-page section.panel.panel {
     min-height: var(--rg-header-height) !important;
     padding: 10px 0 !important;
     align-items: center !important;
+    flex-wrap: nowrap !important;
     gap: 14px !important;
   }
 
@@ -913,6 +933,8 @@ html body main .reference-page section.panel.panel {
 
   .main-nav {
     gap: 8px !important;
+    flex: 0 0 auto !important;
+    flex-wrap: nowrap !important;
   }
 
   .main-nav a {
@@ -928,6 +950,7 @@ html body main .reference-page section.panel.panel {
     padding: 0 9px !important;
     border-radius: 8px !important;
     font-size: .76rem !important;
+    white-space: nowrap !important;
   }
 
   .shell,
@@ -963,6 +986,19 @@ html body main .reference-page section.panel.panel {
 
   .subscription-grid {
     grid-template-columns: 1fr !important;
+  }
+
+  .home-footer {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 8px !important;
+  }
+
+  .home-footer a {
+    position: static !important;
+    transform: none !important;
+    font-size: .72rem !important;
   }
 
   .page-hero {
