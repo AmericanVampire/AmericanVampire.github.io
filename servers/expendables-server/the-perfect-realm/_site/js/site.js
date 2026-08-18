@@ -2,6 +2,26 @@
 
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 
+(() => {
+  const titles = new Map([
+    ['/servers/expendables-server/the-perfect-realm/home/', 'The Perfect Realm'],
+    ['/servers/expendables-server/the-perfect-realm/realm/', 'Server Information'],
+    ['/servers/expendables-server/the-perfect-realm/server-rules/', 'Server Rules'],
+    ['/servers/expendables-server/the-perfect-realm/castle-marketplace/', 'Castle Marketplace'],
+    ['/servers/expendables-server/the-perfect-realm/castle-games/', 'Castle Games'],
+    ['/servers/expendables-server/the-perfect-realm/quest-master/', 'Quest Master'],
+    ['/servers/expendables-server/the-perfect-realm/realm-members/', 'Realm Members'],
+    ['/servers/expendables-server/the-perfect-realm/leaderboards/', 'Leaderboards'],
+    ['/servers/expendables-server/the-perfect-realm/data-library/', 'Minecraft Data Library'],
+  ]);
+
+  const path = window.location.pathname.endsWith('/')
+    ? window.location.pathname
+    : `${window.location.pathname}/`;
+  const title = titles.get(path);
+  if (title) document.title = title;
+})();
+
 (function setupBackToTop() {
   const button = document.createElement('button');
   button.className = 'site-back-to-top';
@@ -82,10 +102,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('[data-site-back]').forEach(button => {
     button.addEventListener('click', () => {
-      if (document.referrer && document.referrer.includes('realmguard.net')) {
+      if (document.referrer && (document.referrer.includes(location.hostname) || document.referrer.includes('realmguard.net'))) {
         try { history.back(); return; } catch (e) {}
       }
-      window.location.href = routes.realm;
+      window.location.href = button.getAttribute('data-fallback') || routes.realm;
     });
   });
 });
