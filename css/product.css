@@ -45,10 +45,10 @@ html body.product-site .store-button strong { font-size: 1.4rem; }
 .feature-rows > div { display: grid; grid-template-columns: 155px minmax(0, 1fr); gap: 24px; padding: 17px 0; border-bottom: 1px solid var(--rg-line); }
 .feature-rows dt { font-size: 15px; line-height: 1.7; font-weight: 700; color: var(--rg-gold-2); }
 .feature-rows dd { margin: 0; font-size: 15px; line-height: 1.75; color: var(--rg-muted); }
-.gallery-tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--rg-line); margin-bottom: 18px; }
-html body.product-site .gallery-tabs button { appearance: none; min-height: 44px !important; padding: 10px 15px !important; margin: 0 0 -1px !important; color: var(--rg-muted) !important; background: transparent !important; border: 0 !important; border-bottom: 2px solid transparent !important; border-radius: 0 !important; font: 600 13px "Segoe UI", Arial, sans-serif !important; box-shadow: none !important; cursor: pointer; }
-html body.product-site .gallery-tabs button:hover { color: var(--rg-gold-2) !important; background: rgba(16, 41, 65, .6) !important; border-bottom-color: transparent !important; }
-html body.product-site .gallery-tabs button[aria-selected="true"] { color: var(--rg-gold) !important; border-bottom-color: var(--rg-gold) !important; }
+.gallery-tabs { display: flex; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--rg-line); margin: 8px 0 22px; }
+html body.product-site .gallery-tabs button { appearance: none; min-width: 130px !important; min-height: 54px !important; padding: 14px 22px !important; margin: 0 0 -1px !important; color: var(--rg-text) !important; background: #0b1a2b !important; border: 1px solid var(--rg-line) !important; border-bottom: 3px solid var(--rg-line) !important; border-radius: 6px 6px 0 0 !important; font: 700 16px/1.35 "Segoe UI", Arial, sans-serif !important; box-shadow: none !important; transition: background-color .12s, color .12s !important; cursor: pointer; }
+html body.product-site .gallery-tabs button:hover { color: var(--rg-gold-2) !important; background: #183751 !important; border-color: var(--rg-gold) !important; }
+html body.product-site .gallery-tabs button[aria-selected="true"] { color: var(--rg-gold-2) !important; background: #183751 !important; border-bottom-color: var(--rg-gold) !important; }
 .product-site [hidden] { display: none !important; }
 .plan-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 30px; }
 .plan { padding: 22px; border: 1px solid var(--rg-line); border-radius: 8px; background: linear-gradient(145deg, rgba(16, 41, 65, .88), rgba(5, 15, 27, .9)); }
@@ -88,7 +88,8 @@ html body.product-site .close-screenshot { position: absolute; top: 5px; right: 
   .fact-strip > div + div { border-top: 1px solid var(--rg-line); }
   .feature-rows > div { grid-template-columns: 1fr; gap: 5px; padding: 15px 0; }
   .plan-grid { grid-template-columns: 1fr; }
-  html body.product-site .gallery-tabs button { padding: 10px 11px !important; }
+  .gallery-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.product-site .gallery-tabs button { min-width: 0 !important; height: 60px !important; padding: 10px 12px !important; font-size: 15px !important; }
   .screenshot-dialog { width: calc(100% - 16px); }
 }
 @media (prefers-reduced-motion: reduce) { .product-site *, .product-site *::before, .product-site *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
