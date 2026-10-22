@@ -41,11 +41,4 @@
   nav.addEventListener('click', event => {
     if (event.target.closest('a')) menu.open = !mobile.matches;
   });
-  document.querySelectorAll('[data-rules]').forEach(button => {
-    button.addEventListener('click', () => {
-      document.querySelectorAll('.community-rule').forEach(rule => {
-        rule.open = button.dataset.rules === 'expand';
-      });
-    });
-  });
 })();

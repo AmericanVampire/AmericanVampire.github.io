@@ -47,13 +47,11 @@ html body.community-site .shop-card th { overflow-wrap: anywhere !important; }
 html body.community-site .shop-card[hidden] { display: none !important; }
 html body.community-site .rules-grid { display: grid !important; grid-template-columns: minmax(0, 1fr) !important; gap: 12px !important; margin: 0 !important; align-items: start; }
 .community-rule { border: 1px solid var(--rg-line); border-radius: 8px; background: rgba(9, 25, 43, .88); }
-.community-rule summary { padding: 16px; cursor: pointer; color: var(--rg-gold); }
-.community-rule summary::marker { color: var(--rg-gold); }
+.community-rule .rule-heading { padding: 16px; color: var(--rg-gold); }
 .community-rule .rule-index { color: var(--rg-gold); margin: 0 12px 0 3px; font-size: 13px; }
 html body.community-site .community-rule h2 { display: inline; color: var(--rg-text); font: 700 16px/1.5 "Segoe UI", Arial, sans-serif; margin: 0; }
 .community-rule .rule-body { padding: 0 20px 18px; }
 .community-rule .rule-body p { font-size: 15px; line-height: 1.75; margin: 0 0 12px; }
-.rule-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 20px; }
 html body.community-site .privacy-document { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 0 !important; }
 html body.community-site .privacy-document h2 { font-size: 25px !important; }
 .policy-view { scroll-margin-top: 85px; }

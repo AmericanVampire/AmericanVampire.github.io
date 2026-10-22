@@ -10,8 +10,6 @@ document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date
     ['/servers/expendables-server/the-perfect-realm/castle-marketplace/', 'Castle Marketplace'],
     ['/servers/expendables-server/the-perfect-realm/castle-games/', 'Castle Games'],
     ['/servers/expendables-server/the-perfect-realm/quest-master/', 'Quest Master'],
-    ['/servers/expendables-server/the-perfect-realm/realm-members/', 'Realm Members'],
-    ['/servers/expendables-server/the-perfect-realm/leaderboards/', 'Leaderboards'],
     ['/servers/expendables-server/the-perfect-realm/data-library/', 'Minecraft Data Library'],
   ]);
 
@@ -91,7 +89,7 @@ document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date
 
 /* Google Sites + GitHub Pages hybrid navigation */
 document.addEventListener('DOMContentLoaded', () => {
-  const routes = {"home": "/servers/expendables-server/the-perfect-realm/home/", "realm": "/servers/expendables-server/the-perfect-realm/realm/", "server-rules": "/servers/expendables-server/the-perfect-realm/server-rules/", "castle-marketplace": "/servers/expendables-server/the-perfect-realm/castle-marketplace/", "castle-games": "/servers/expendables-server/the-perfect-realm/castle-games/", "realm-members": "/servers/expendables-server/the-perfect-realm/realm-members/", "leaderboards": "/servers/expendables-server/the-perfect-realm/leaderboards/", "quest-master": "/servers/expendables-server/the-perfect-realm/quest-master/", "data-library": "/servers/expendables-server/the-perfect-realm/data-library/"};
+  const routes = {"home":"/servers/expendables-server/the-perfect-realm/home/","realm":"/servers/expendables-server/the-perfect-realm/realm/","server-rules":"/servers/expendables-server/the-perfect-realm/server-rules/","castle-marketplace":"/servers/expendables-server/the-perfect-realm/castle-marketplace/","castle-games":"/servers/expendables-server/the-perfect-realm/castle-games/","quest-master":"/servers/expendables-server/the-perfect-realm/quest-master/","data-library":"/servers/expendables-server/the-perfect-realm/data-library/"};
 
   document.querySelectorAll('[data-site-path]').forEach(el => {
     const key = el.getAttribute('data-site-path');
