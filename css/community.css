@@ -1,0 +1,86 @@
+/* Community pages share the product sidebar and keep their existing tools. */
+html body.community-site { padding-top: 0 !important; line-height: 1.5; }
+.community-site .product-shell { align-content: start; }
+.community-content { container-type: inline-size; }
+.community-context { margin: 0 0 18px; padding: 0 14px 16px; border-bottom: 1px solid var(--rg-line); font-size: 13px; line-height: 1.7; color: var(--rg-muted); }
+.community-context a { color: var(--rg-gold); text-decoration: none; }
+.community-context strong { display: block; color: var(--rg-text); font-weight: 600; }
+.community-nav-group { margin: 12px 0 4px; padding: 12px 14px 0; border-top: 1px solid var(--rg-line); font-size: 12px; color: var(--rg-muted); }
+.community-sidebar .explore-nav a { text-decoration: none !important; }
+html body.community-site .community-content main,
+html body.community-site .community-content .section,
+html body.community-site .community-content .content-section,
+html body.community-site .community-content .home-section,
+html body.community-site .community-content .mc-content,
+html body.community-site .community-content .market-main,
+html body.community-site .community-content .privacy-section { width: 100% !important; max-width: none !important; min-height: 0 !important; padding: 0 !important; margin: 0 !important; border: 0 !important; background: transparent !important; }
+html body.community-site .community-content .shell,
+html body.community-site .community-content .section-shell,
+html body.community-site .community-content .market-shell,
+html body.community-site .community-content .mc-shell { width: 100% !important; max-width: none !important; margin: 0 !important; padding: 0 !important; }
+html body.community-site .community-content .page-hero { padding: 0 !important; margin: 0 0 26px !important; background: transparent !important; border: 0 !important; }
+html body.community-site .community-content h1 { margin: 0 0 13px !important; color: var(--rg-gold) !important; font-family: Georgia, "Times New Roman", serif !important; font-size: 36px !important; line-height: 1.2 !important; }
+html body.community-site .community-content .page-hero p { font-size: 16px !important; line-height: 1.7 !important; max-width: 850px !important; }
+.community-content .section-intro { font-size: 16px; line-height: 1.7; }
+html body.community-site .selection-grid,
+html body.community-site .realm-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+html body.community-site .selection-card,
+html body.community-site .realm-card { padding: 22px !important; min-height: 0 !important; border-radius: 8px !important; }
+html body.community-site .selection-card h2 { font-size: 24px !important; line-height: 1.25 !important; margin: 0 0 12px !important; color: var(--rg-gold) !important; }
+html body.community-site .realm-card h2 { font-size: 22px !important; line-height: 1.3 !important; margin: 0 0 12px !important; color: var(--rg-gold) !important; }
+.community-content .realm-card p,
+.community-content .selection-card p { font-size: 15px; line-height: 1.7; }
+.community-content .realm-card.wide { grid-column: 1 / -1; }
+.community-content .server-brand-lockup { margin-bottom: 16px; }
+.community-content .home-artwork { margin-bottom: 24px; }
+html body.community-site .home-destinations { margin-top: 22px; }
+html body.community-site .home-destinations > a { background: transparent !important; min-height: 0 !important; box-shadow: none !important; border-radius: 0 !important; }
+html body.community-site .community-content .reference-page > .panel.panel { margin: 0 0 26px !important; padding: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
+html body.community-site .reference-page > .panel > h2 { font-size: 23px !important; line-height: 1.3 !important; margin-bottom: 18px !important; color: var(--rg-gold) !important; }
+html body.community-site .mc-content .grid { grid-template-columns: repeat(auto-fit, minmax(min(235px, 100%), 1fr)) !important; }
+html body.community-site .enchantment-grid { grid-template-columns: repeat(auto-fit, minmax(min(285px, 100%), 1fr)) !important; }
+html body.community-site .effects { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 12px; }
+html body.community-site #shops { display: grid !important; grid-template-columns: minmax(0, 1fr) !important; gap: 16px !important; align-items: start; }
+.community-content .market-controls { margin-top: 20px; }
+html body.community-site .shop-card { margin: 0 !important; }
+html body.community-site .shop-card th { overflow-wrap: anywhere !important; }
+html body.community-site .shop-card[hidden] { display: none !important; }
+html body.community-site .rules-grid { display: grid !important; grid-template-columns: minmax(0, 1fr) !important; gap: 12px !important; margin: 0 !important; align-items: start; }
+.community-rule { border: 1px solid var(--rg-line); border-radius: 8px; background: rgba(9, 25, 43, .88); }
+.community-rule summary { padding: 16px; cursor: pointer; color: var(--rg-gold); }
+.community-rule summary::marker { color: var(--rg-gold); }
+.community-rule .rule-index { color: var(--rg-gold); margin: 0 12px 0 3px; font-size: 13px; }
+html body.community-site .community-rule h2 { display: inline; color: var(--rg-text); font: 700 16px/1.5 "Segoe UI", Arial, sans-serif; margin: 0; }
+.community-rule .rule-body { padding: 0 20px 18px; }
+.community-rule .rule-body p { font-size: 15px; line-height: 1.75; margin: 0 0 12px; }
+.rule-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 20px; }
+html body.community-site .privacy-document { border: 0 !important; padding: 0 !important; background: transparent !important; border-radius: 0 !important; }
+html body.community-site .privacy-document h2 { font-size: 25px !important; }
+.policy-view { scroll-margin-top: 85px; }
+.community-site [hidden] { display: none !important; }
+@container (min-width: 960px) {
+  html body.community-site #shops { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  html body.community-site .effects { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+}
+@container (min-width: 800px) {
+  html body.community-site .rules-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+}
+@media (max-width: 800px) {
+  .community-context { display: none; }
+  .community-sidebar .mobile-sections[open] { max-height: calc(100dvh - 110px); overflow-y: auto; }
+  html body.community-site .community-content h1 { font-size: 30px !important; }
+  html body.community-site .selection-grid,
+  html body.community-site .realm-grid { grid-template-columns: minmax(0, 1fr) !important; }
+  html body.community-site .community-content .page-hero p { font-size: 15px !important; }
+}
+@media (min-width: 801px) and (max-height: 740px) { .community-sidebar { position: static; } }
+@media (max-width: 480px) {
+  html body.community-site .effects { grid-template-columns: minmax(0, 1fr) !important; }
+  html body.community-site .summary { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  html body.community-site .stat { padding: 12px !important; min-height: 0 !important; }
+  html body.community-site .stat strong { font-size: 22px !important; line-height: 1.3 !important; }
+  html body.community-site .stat span { font-size: 13px !important; line-height: 1.5 !important; }
+  html body.community-site .category-filters { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html body.community-site .category-filter { min-width: 0 !important; min-height: 48px !important; white-space: normal !important; padding: 8px 10px !important; }
+  html body.community-site .market-controls { grid-template-columns: minmax(0, 1fr) !important; }
+}
