@@ -18,19 +18,19 @@
       else link.removeAttribute('aria-current');
     });
     document.querySelector('#current-section').textContent = links.find(link => link.hash === `#${view.id}`).textContent;
-    document.title = view.id === 'overview' ? 'Realm Guard' : view.querySelector('h1').textContent;
+    document.title = view.id === 'home' ? 'Realm Guard' : view.id === 'overview' ? 'Overview' : view.querySelector('h1').textContent;
     menu.open = !mobile.matches;
     if (scroll) {
       window.scrollTo({ top: 0, behavior: 'instant' });
-      const heading = view.querySelector('h1');
+      const heading = view.id === 'home' ? document.querySelector('#product-content') : view.querySelector('h1');
       heading.tabIndex = -1;
       heading.focus({ preventScroll: true });
     }
   }
   window.addEventListener('hashchange', () => showView(true));
   mobile.addEventListener('change', () => { menu.open = !mobile.matches; });
-  links.forEach(link => link.addEventListener('click', () => {
-    if (link.hash === location.hash || (!location.hash && link.hash === '#overview')) showView(true);
+  document.querySelectorAll('.explore-nav a, .home-destinations a').forEach(link => link.addEventListener('click', () => {
+    if (link.hash === location.hash || (!location.hash && link.hash === '#home')) showView(true);
   }));
   showView();
 

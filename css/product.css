@@ -1,19 +1,26 @@
 /* Homepage only; community pages keep the shared theme. */
 html body.product-site { letter-spacing: 0; }
-.product-site .product-shell { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 36px; width: min(1180px, calc(100% - 40px)); margin: 30px auto 40px; align-items: start; min-height: calc(100vh - 210px); }
+.product-site .product-shell { display: grid; grid-template-columns: 225px minmax(0, 1fr); gap: 36px; width: min(1360px, calc(100% - 48px)); margin: 30px auto 40px; align-items: start; min-height: calc(100vh - 210px); }
 .product-sidebar { position: sticky; top: 86px; }
 .mobile-sections summary { display: none; }
 .explore-nav { display: grid; gap: 5px; }
-.explore-nav a { display: flex; align-items: center; min-height: 45px; padding: 12px 14px; font-size: 14px; font-weight: 600; color: var(--rg-muted); border: 1px solid transparent; border-radius: 6px; transition: background .15s, color .15s; }
+.explore-nav a { display: flex; align-items: center; min-height: 48px; padding: 13px 14px; font-size: 15px; font-weight: 600; color: var(--rg-muted); border: 1px solid transparent; border-radius: 6px; transition: background .15s, color .15s; }
 .explore-nav a:hover { background: rgba(16, 41, 65, .8); color: var(--rg-text); }
 .explore-nav a[aria-current] { background: linear-gradient(100deg, #142f49, #0b1a2b); border-color: var(--rg-line); color: var(--rg-gold-2); box-shadow: inset 3px 0 var(--rg-gold); }
-.sidebar-art { margin-top: 30px; border-top: 1px solid var(--rg-line); padding-top: 22px; }
-.sidebar-art img { display: block; width: 100%; height: auto; border-radius: 6px; }
-.sidebar-art span { display: block; margin-top: 12px; font-size: 12px; line-height: 1.6; color: var(--rg-muted); }
 .sidebar-store { display: flex; justify-content: space-between; padding: 18px 0; margin-top: 12px; border-top: 1px solid var(--rg-line); font-size: 13px; color: var(--rg-gold); }
 .product-content { min-width: 0; padding-left: 30px; border-left: 1px solid var(--rg-line); }
 .product-view { display: none; scroll-margin-top: 85px; }
 .product-view.is-current { display: block; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+.home-artwork { display: block; width: 100%; height: auto; border: 1px solid var(--rg-line); border-radius: 8px; }
+.product-site .home-introduction { margin: 24px 0 20px; font-size: 17px; line-height: 1.75; max-width: 900px; }
+.home-destinations { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 28px; margin-top: 28px; }
+.home-destinations > a { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 20px 0; border-top: 1px solid var(--rg-line); }
+.home-destinations strong { display: block; color: var(--rg-gold-2); font-size: 16px; }
+.home-destinations strong + span { display: block; margin-top: 7px; font-size: 14px; line-height: 1.65; color: var(--rg-muted); }
+.home-destinations > a > span:last-child { color: var(--rg-gold); transition: transform .15s; }
+.home-destinations > a:hover > span:last-child { transform: translateX(4px); }
+.home-destinations > a:hover strong { color: var(--rg-gold); }
 .view-heading { margin-bottom: 24px; }
 html body.product-site .view-heading h1 { color: var(--rg-gold); font-size: 36px; line-height: 1.15; margin: 0 0 13px; letter-spacing: 0; }
 .product-site .view-heading p { font-size: 16px; line-height: 1.7; margin: 0; max-width: 760px; }
@@ -36,8 +43,8 @@ html body.product-site .store-button strong { font-size: 1.4rem; }
 .product-site .requirement-note { padding: 12px 16px; border-left: 2px solid var(--rg-gold); background: rgba(9, 35, 60, .65); font-size: 13px; line-height: 1.7; margin: 18px 0 24px; }
 .feature-rows { margin: 22px 0 28px; }
 .feature-rows > div { display: grid; grid-template-columns: 155px minmax(0, 1fr); gap: 24px; padding: 17px 0; border-bottom: 1px solid var(--rg-line); }
-.feature-rows dt { font-size: 14px; line-height: 1.7; font-weight: 700; color: var(--rg-gold-2); }
-.feature-rows dd { margin: 0; font-size: 14px; line-height: 1.75; color: var(--rg-muted); }
+.feature-rows dt { font-size: 15px; line-height: 1.7; font-weight: 700; color: var(--rg-gold-2); }
+.feature-rows dd { margin: 0; font-size: 15px; line-height: 1.75; color: var(--rg-muted); }
 .gallery-tabs { display: flex; flex-wrap: wrap; gap: 0; border-bottom: 1px solid var(--rg-line); margin-bottom: 18px; }
 html body.product-site .gallery-tabs button { appearance: none; min-height: 44px !important; padding: 10px 15px !important; margin: 0 0 -1px !important; color: var(--rg-muted) !important; background: transparent !important; border: 0 !important; border-bottom: 2px solid transparent !important; border-radius: 0 !important; font: 600 13px "Segoe UI", Arial, sans-serif !important; box-shadow: none !important; cursor: pointer; }
 html body.product-site .gallery-tabs button:hover { color: var(--rg-gold-2) !important; background: rgba(16, 41, 65, .6) !important; border-bottom-color: transparent !important; }
@@ -69,7 +76,9 @@ html body.product-site .close-screenshot { position: absolute; top: 5px; right: 
   .mobile-sections[open] summary { border-bottom: 1px solid var(--rg-line); }
   .explore-nav { padding: 8px; }
   .explore-nav a { min-height: 44px; }
-  .sidebar-art, .sidebar-store { display: none; }
+  .sidebar-store { display: none; }
+  .home-destinations { grid-template-columns: 1fr; margin-top: 20px; }
+  .product-site .home-introduction { font-size: 16px; margin-top: 20px; }
   .product-content { padding-left: 0; border-left: 0; }
   html body.product-site .view-heading h1 { font-size: 30px; }
   .product-site .view-heading p { font-size: 15px; }
