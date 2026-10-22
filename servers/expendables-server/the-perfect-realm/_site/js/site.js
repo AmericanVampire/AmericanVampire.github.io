@@ -5,11 +5,9 @@ document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date
 (() => {
   const titles = new Map([
     ['/servers/expendables-server/the-perfect-realm/home/', 'The Perfect Realm'],
-    ['/servers/expendables-server/the-perfect-realm/realm/', 'Server Information'],
     ['/servers/expendables-server/the-perfect-realm/server-rules/', 'Server Rules'],
     ['/servers/expendables-server/the-perfect-realm/castle-marketplace/', 'Castle Marketplace'],
     ['/servers/expendables-server/the-perfect-realm/castle-games/', 'Castle Games'],
-    ['/servers/expendables-server/the-perfect-realm/quest-master/', 'Quest Master'],
     ['/servers/expendables-server/the-perfect-realm/data-library/', 'Minecraft Data Library'],
   ]);
 
@@ -89,7 +87,7 @@ document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date
 
 /* Google Sites + GitHub Pages hybrid navigation */
 document.addEventListener('DOMContentLoaded', () => {
-  const routes = {"home":"/servers/expendables-server/the-perfect-realm/home/","realm":"/servers/expendables-server/the-perfect-realm/realm/","server-rules":"/servers/expendables-server/the-perfect-realm/server-rules/","castle-marketplace":"/servers/expendables-server/the-perfect-realm/castle-marketplace/","castle-games":"/servers/expendables-server/the-perfect-realm/castle-games/","quest-master":"/servers/expendables-server/the-perfect-realm/quest-master/","data-library":"/servers/expendables-server/the-perfect-realm/data-library/"};
+  const routes = {"home":"/servers/expendables-server/the-perfect-realm/home/","server-rules":"/servers/expendables-server/the-perfect-realm/server-rules/","castle-marketplace":"/servers/expendables-server/the-perfect-realm/castle-marketplace/","castle-games":"/servers/expendables-server/the-perfect-realm/castle-games/","data-library":"/servers/expendables-server/the-perfect-realm/data-library/"};
 
   document.querySelectorAll('[data-site-path]').forEach(el => {
     const key = el.getAttribute('data-site-path');
@@ -98,12 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
     el.removeAttribute('target');
   });
 
-  document.querySelectorAll('[data-site-back]').forEach(button => {
-    button.addEventListener('click', () => {
-      if (document.referrer && (document.referrer.includes(location.hostname) || document.referrer.includes('realmguard.net'))) {
-        try { history.back(); return; } catch (e) {}
-      }
-      window.location.href = button.getAttribute('data-fallback') || routes.realm;
-    });
-  });
 });

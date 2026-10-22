@@ -34,6 +34,7 @@ html body.community-site .realm-card h2 { font-size: 22px !important; line-heigh
 .community-content .server-brand-lockup { margin-bottom: 16px; }
 .community-content .home-artwork { margin-bottom: 24px; }
 html body.community-site .home-destinations { margin-top: 22px; }
+.community-content .home-destinations > a:only-child { grid-column: 1 / -1; }
 html body.community-site .home-destinations > a { background: transparent !important; min-height: 0 !important; box-shadow: none !important; border-radius: 0 !important; }
 html body.community-site .community-content .reference-page > .panel.panel { margin: 0 0 26px !important; padding: 0 !important; border: 0 !important; border-radius: 0 !important; background: transparent !important; box-shadow: none !important; }
 html body.community-site .reference-page > .panel > h2 { font-size: 23px !important; line-height: 1.3 !important; margin-bottom: 18px !important; color: var(--rg-gold) !important; }
