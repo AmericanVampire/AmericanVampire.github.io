@@ -4,290 +4,87 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Realm Guard</title>
-  <link rel="icon" href="/assets/images/realm-guard-app.ico" sizes="any">
-  <meta name="description" content="Realm Guard is a Windows admin console for Minecraft Bedrock Realms with player monitoring, logs, commands, backups, moderation, exports, and Discord status publishing.">
+  <meta name="description" content="Explore Realm Guard, the Windows admin console for Minecraft Bedrock Realms. Player monitoring, moderation, logs, backups, commands, and Discord integration.">
   <meta property="og:title" content="Realm Guard">
-  <meta property="og:description" content="Monitor players, review activity, manage members, run commands, download Realm backups, and maintain a live Discord roster from one Windows application.">
+  <meta property="og:description" content="A dedicated Windows workspace for your Minecraft Bedrock Realm. Explore the real app and get Realm Guard from the Microsoft Store.">
   <meta property="og:image" content="/assets/images/realm-guard-banner.png">
   <meta property="og:type" content="website">
+  <link rel="icon" href="/assets/images/realm-guard-app.ico" sizes="any">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/realmguard-theme.css">
+  <link rel="stylesheet" href="/css/product.css?v=20261022-1">
+  <script src="/js/product.js?v=20261022-1" defer></script>
 </head>
-<body>
-  <header class="site-header">
-    <div class="nav-shell">
-      <a class="brand" href="/">
-        <img class="brand-mark" src="/assets/images/realm-guard-icon.png" alt="">
-        <span>Realm Guard</span>
-      </a>
-      <nav class="main-nav" aria-label="Main navigation"><a class="active" href="/">Home</a></nav>
-    </div>
-  </header>
+<body class="product-site">
+  <header class="site-header"><div class="nav-shell">
+    <a class="brand" href="/"><img class="brand-mark" src="/assets/images/realm-guard-icon.png" alt=""><span>Realm Guard</span></a>
+    <nav class="main-nav" aria-label="Main navigation"><a class="active" href="/">Home</a></nav>
+  </div></header>
+  <div class="product-shell">
+    <aside class="product-sidebar">
+      <details class="mobile-sections" open>
+        <summary><span id="current-section">Overview</span><span aria-hidden="true">&#9662;</span></summary>
+        <nav class="explore-nav" aria-label="Explore Realm Guard">
+          <a href="#overview" aria-current="page">Overview</a>
+          <a href="#monitoring">Monitoring</a>
+          <a href="#administration">Administration</a>
+          <a href="#discord-exports">Discord &amp; Exports</a>
+          <a href="#get-realm-guard">Get Realm Guard</a>
+          <a href="#privacy">Privacy</a>
+        </nav>
+      </details>
+      <div class="sidebar-art"><img src="/assets/images/realm-guard-banner.png" width="1680" height="910" alt="Realm Guard castle artwork"><span>Built for Minecraft Bedrock Realms</span></div>
+      <a class="sidebar-store" href="https://apps.microsoft.com/detail/9pjz9xzk4jrq?cid=DevShareMCLPCS&amp;hl=en-US&amp;gl=US">Microsoft Store <span aria-hidden="true">&#8599;</span></a>
+    </aside>
+    <main id="product-content" class="product-content">
+      <section id="overview" class="product-view is-current" aria-labelledby="overview-title">
+        <header class="view-heading"><h1 id="overview-title">Realm Guard</h1><p>A dedicated Windows workspace for your Minecraft Bedrock Realm. Monitor players, manage your Realm, and keep the records that matter in one place.</p></header>
 
-  <main>
-    <section class="realmguard-hero" aria-label="Realm Guard">
-      <div class="realmguard-hero-overlay"></div>
-    </section>
+<div class="overview-actions"><a class="store-button" href="https://apps.microsoft.com/detail/9pjz9xzk4jrq?cid=DevShareMCLPCS&amp;hl=en-US&amp;gl=US" aria-label="Download Realm Guard from the Microsoft Store"><img src="/assets/images/microsoft-store-icon.png" alt=""><span><small>Download from the</small><strong>Microsoft Store</strong></span></a><span class="platform-note">Windows 10 &amp; 11 <span aria-hidden="true">/</span> Minecraft Bedrock Realms</span></div>
+<figure class="app-shot" ><a href="/assets/images/app/01-home.png" data-lightbox><img src="/assets/images/app/01-home.png" width="1600" height="900" alt="Realm Guard Home dashboard showing the roster, local archives, attention queue, and recent activity" loading="lazy"></a><figcaption>Home dashboard</figcaption></figure>
+<dl class="fact-strip"><div><dt>No required add-ons</dt><dd>No resource packs or Realm modifications.</dd></div><div><dt>Local-first records</dt><dd>A private SQLite database on your PC.</dd></div><div><dt>Achievement friendly</dt><dd>Monitoring does not require cheats.</dd></div></dl>
+<p class="requirement-note">World commands require cheats enabled in the active world and sufficient in-game permissions. Enabling cheats disables achievements for that world. Realm Guard does not disable achievements on its own.</p>
+      </section>
+      <section id="monitoring" class="product-view" aria-labelledby="monitoring-title">
+        <header class="view-heading"><h1 id="monitoring-title">Monitoring</h1><p>Follow your Realm's activity and keep player information organized, with searchable records stored on your PC.</p></header>
 
-    <section class="proof-band">
-      <div class="shell proof-grid">
-        <div><strong>No Resource Packs</strong><span>No required behavior packs, add-ons, or Realm modifications.</span></div>
-        <div><strong>Achievement Friendly</strong><span>Realm Guard does not disable achievements on its own. Command execution requires cheats; enabling cheats disables achievements for that world.</span></div>
-        <div><strong>Local-First</strong><span>Realm records, logs, notes, exports, and archive history stay on your PC.</span></div>
-      </div>
-    </section>
+<div data-gallery><div class="gallery-tabs" role="tablist" aria-label="monitor screenshots"><button type="button" role="tab" id="monitor-0-tab" aria-selected="true" aria-controls="monitor-0" tabindex="0">Players</button><button type="button" role="tab" id="monitor-1-tab" aria-selected="false" aria-controls="monitor-1" tabindex="-1">Logs</button><button type="button" role="tab" id="monitor-2-tab" aria-selected="false" aria-controls="monitor-2" tabindex="-1">Dashboard</button></div><figure class="app-shot" id="monitor-0" role="tabpanel" aria-labelledby="monitor-0-tab" ><a href="/assets/images/app/02-players.png" data-lightbox><img src="/assets/images/app/02-players.png" width="1600" height="900" alt="Realm Guard member records and player details" loading="lazy"></a><figcaption>Players</figcaption></figure><figure class="app-shot" id="monitor-1" role="tabpanel" aria-labelledby="monitor-1-tab" hidden><a href="/assets/images/app/04-logs.png" data-lightbox><img src="/assets/images/app/04-logs.png" width="1600" height="900" alt="Realm Guard searchable activity logs" loading="lazy"></a><figcaption>Logs</figcaption></figure><figure class="app-shot" id="monitor-2" role="tabpanel" aria-labelledby="monitor-2-tab" hidden><a href="/assets/images/app/01-home.png" data-lightbox><img src="/assets/images/app/01-home.png" width="1600" height="900" alt="Realm Guard dashboard with connection state and recent activity" loading="lazy"></a><figcaption>Dashboard</figcaption></figure></div>
+<dl class="feature-rows"><div><dt>Player records</dt><dd>Gamertags, Xbox XUIDs, permissions, last activity, pending invitations, banned members, labels, review flags, and private local notes.</dd></div><div><dt>Five log views</dt><dd>Server activity includes deaths, kills, and system events. Separate views cover joins and departures with local timestamps, observed chat, command results, and moderation history. Search and filter by the information you need. Command logs identify the sending account and Minecraft's completion, failure, or no-response result.</dd></div><div><dt>Live Monitor</dt><dd>Inspect connection state, session start, Bedrock protocol version, reconnection attempts, packet counts, observed events, and disconnect details when troubleshooting.</dd></div></dl>
+      </section>
+      <section id="administration" class="product-view" aria-labelledby="administration-title">
+        <header class="view-heading"><h1 id="administration-title">Administration</h1><p>Manage membership, review moderation history, and access authorized Realm tools from a dedicated console.</p></header>
 
-    <section class="section home-panel">
-      <div class="shell split product-intro">
-        <div>
-          <div class="kicker">The Admin Console for Minecraft Bedrock Realms</div>
-          <h2>Monitor players, review activity, manage members, run commands, download Realm backups, and maintain a live Discord roster from one dedicated Windows application.</h2>
-          <p>Realm Guard gives Realm owners and administrators a dedicated control center for operating a Minecraft Bedrock Realm. It replaces scattered screenshots, chat history, handwritten notes, and separate tools with one organized administration workflow.</p>
-          <p>Realm Guard connects through authorized Microsoft and Xbox services and observes the Realm through a dedicated Minecraft account. An optional Realm owner account unlocks owner-level management features.</p>
-          <p>Command execution requires cheats to be enabled in the Realm's active world and the sending account to have the required permissions. Commands will not execute while cheats are disabled.</p>
-          <div class="inline-actions">
-            <a class="store-button" href="https://apps.microsoft.com/detail/9PJZ9XZK4JRQ" aria-label="Download Realm Guard from the Microsoft Store">
-              <img src="/assets/images/microsoft-store-icon.png" alt="">
-              <span><small>Download from the</small><strong>Microsoft Store</strong></span>
-            </a>
-          </div>
-        </div>
-        <div class="product-card">
-          <img class="product-helmet" src="/assets/images/realm-guard-icon.png" alt="Realm Guard shield mark">
-          <div>
-            <div class="kicker">Your Realm. Your Control.</div>
-            <ul class="check-list">
-              <li>Native Realm connection through an authorized observer account.</li>
-              <li>Realm records are stored locally in a private SQLite database on your PC.</li>
-              <li>Owner-level features available when an authorized Realm owner account is connected.</li>
-              <li>Windows 10 and Windows 11 administration console.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
+<div data-gallery><div class="gallery-tabs" role="tablist" aria-label="admin screenshots"><button type="button" role="tab" id="admin-0-tab" aria-selected="true" aria-controls="admin-0" tabindex="0">Moderation</button><button type="button" role="tab" id="admin-1-tab" aria-selected="false" aria-controls="admin-1" tabindex="-1">Realm tools</button><button type="button" role="tab" id="admin-2-tab" aria-selected="false" aria-controls="admin-2" tabindex="-1">Commands</button><button type="button" role="tab" id="admin-3-tab" aria-selected="false" aria-controls="admin-3" tabindex="-1">Quick commands</button></div><figure class="app-shot" id="admin-0" role="tabpanel" aria-labelledby="admin-0-tab" ><a href="/assets/images/app/03-moderation.png" data-lightbox><img src="/assets/images/app/03-moderation.png" width="1600" height="900" alt="Realm Guard moderation view with review queues and administrator records" loading="lazy"></a><figcaption>Moderation</figcaption></figure><figure class="app-shot" id="admin-1" role="tabpanel" aria-labelledby="admin-1-tab" hidden><a href="/assets/images/app/07-realm-management.png" data-lightbox><img src="/assets/images/app/07-realm-management.png" width="1600" height="900" alt="Realm Guard world slots, settings, and backup tools" loading="lazy"></a><figcaption>Realm tools</figcaption></figure><figure class="app-shot" id="admin-2" role="tabpanel" aria-labelledby="admin-2-tab" hidden><a href="/assets/images/app/05-command-console.png" data-lightbox><img src="/assets/images/app/05-command-console.png" width="1600" height="900" alt="Realm Guard command console with suggestions and syntax" loading="lazy"></a><figcaption>Commands</figcaption></figure><figure class="app-shot" id="admin-3" role="tabpanel" aria-labelledby="admin-3-tab" hidden><a href="/assets/images/app/06-quick-commands.png" data-lightbox><img src="/assets/images/app/06-quick-commands.png" width="1600" height="900" alt="Realm Guard quick command controls for player and world actions" loading="lazy"></a><figcaption>Quick commands</figcaption></figure></div>
+<p class="requirement-note">Commands will not execute while cheats are disabled. World commands require cheats enabled in the Realm's active world and sufficient in-game permissions. Enabling cheats disables achievements for that world. Realm Guard cannot bypass these requirements.</p>
+<dl class="feature-rows"><div><dt>Members &amp; moderation</dt><dd>Invite by Xbox XUID, change permissions, remove or ban members, clear bans, and disconnect online players with an optional reason. Keep review queues, labels, notes, and action history together.</dd></div><div><dt>Realm &amp; backups</dt><dd>Change the Realm name and message, refresh its current state, select among three world slots, and review game mode, difficulty, cheats, PvP, command blocks, forced game mode, required packs, and spawn protection. Download available backups. Choose a preferred folder, track progress, cancel downloads, and review saved archives.</dd></div><div><dt>Command console</dt><dd>Browse slash commands with syntax, descriptions, contextual suggestions, online-player targets, and local history. Quick commands cover teleporting, game modes, time, and weather.</dd></div></dl>
+<p class="detail-note">Owner tools such as backups, invitations, and membership management do not require cheats; they require an authorized Realm owner account.</p>
+      </section>
+      <section id="discord-exports" class="product-view" aria-labelledby="discord-exports-title">
+        <header class="view-heading"><h1 id="discord-exports-title">Discord &amp; Exports</h1><p>Keep your community informed and turn saved Realm activity into records you can use outside the app.</p></header>
 
-    <section class="section section-alt" id="features">
-      <div class="shell">
-        <div class="section-head">
-          <div class="kicker">Core Capabilities</div>
-          <h2>Realm Guard brings the daily work of Bedrock Realm administration into one clean workspace.</h2>
-          <p>Review who is online, what changed, what happened, what needs follow-up, and what owner-level action is available from the same application.</p>
-        </div>
-        <div class="card-grid feature-grid">
-          <article class="card">
-            <div class="eyebrow">Home Dashboard</div>
-            <h3>See What Matters Immediately</h3>
-            <p>View the current Realm, observer account, owner account, connection state, online-player count, local archive count, stored activity, flagged players, recent activity, and online roster.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Player Management</div>
-            <h3>Complete Player Records</h3>
-            <p>Manage active members, pending invitations, banned players, gamertags, Xbox XUIDs, permissions, last activity, labels, review flags, and private local notes.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Moderation</div>
-            <h3>Organized Follow-Up</h3>
-            <p>Keep review queues, labels, notes, bans, unbans, invitations, removals, permission changes, disconnect reasons, Realm identity changes, and history separated from ordinary activity.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Command Console</div>
-            <h3>Minecraft-Style Commands</h3>
-            <p>Begin with a slash, browse available commands, view syntax and descriptions, receive contextual suggestions, target online players, and keep local command history. Requires cheats enabled in the active world and sufficient in-game permissions. Realm Guard cannot bypass these requirements.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Realm Backups</div>
-            <h3>Download And Track Archives</h3>
-            <p>View available Realm backups, choose a save location, configure a preferred backup folder, monitor progress, cancel downloads, and review recent local archives.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Discord Integration</div>
-            <h3>Live Realm Status</h3>
-            <p>Authorize Discord, choose a server and channel, and maintain one branded live-player embed with Realm name, world-slot name, online players, count, and update time.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<div data-gallery><div class="gallery-tabs" role="tablist" aria-label="connect screenshots"><button type="button" role="tab" id="connect-0-tab" aria-selected="true" aria-controls="connect-0" tabindex="0">Discord</button><button type="button" role="tab" id="connect-1-tab" aria-selected="false" aria-controls="connect-1" tabindex="-1">Exports</button></div><figure class="app-shot" id="connect-0" role="tabpanel" aria-labelledby="connect-0-tab" ><a href="/assets/images/app/09-discord-integration.png" data-lightbox><img src="/assets/images/app/09-discord-integration.png" width="1600" height="900" alt="Realm Guard Discord integration settings and live Realm status embed" loading="lazy"></a><figcaption>Discord</figcaption></figure><figure class="app-shot" id="connect-1" role="tabpanel" aria-labelledby="connect-1-tab" hidden><a href="/assets/images/app/08-exports.png" data-lightbox><img src="/assets/images/app/08-exports.png" width="1600" height="900" alt="Realm Guard export options for saved Realm logs" loading="lazy"></a><figcaption>Exports</figcaption></figure></div>
+<dl class="feature-rows"><div><dt>One live Discord embed</dt><dd>Authorize Discord and choose a server and channel. Publish the Realm name, active world-slot name, online players, player count, and update time in one maintained message.</dd></div><div><dt>CSV &amp; plain text</dt><dd>Export saved logs as spreadsheet-ready CSV or readable text, with optional date ranges, a preferred export folder, and local export history. Private administrator notes are excluded from moderation reports.</dd></div></dl>
+      </section>
+      <section id="get-realm-guard" class="product-view" aria-labelledby="get-realm-guard-title">
+        <header class="view-heading"><h1 id="get-realm-guard-title">Get Realm Guard</h1><p>Install from the Microsoft Store and choose the plan that fits your Realm.</p></header>
 
-    <section class="section home-panel">
-      <div class="shell">
-        <div class="section-head compact">
-          <div class="kicker">Logs And Records</div>
-          <h2>Five purpose-built log views keep information separated by purpose.</h2>
-          <p>Search and filtering update automatically while the administrator types or changes an option.</p>
-        </div>
-        <div class="card-grid compact-grid">
-          <article class="card">
-            <div class="eyebrow">Server Activity</div>
-            <h3>Deaths, Kills, And Events</h3>
-            <p>Track deaths, kills, system events, and observed Realm activity.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Connections</div>
-            <h3>Joins And Departures</h3>
-            <p>Record player joins and departures with standardized local timestamps.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Chat</div>
-            <h3>Observed Messages</h3>
-            <p>Store observed player chat with sender name, message, and time.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Commands</div>
-            <h3>Execution History</h3>
-            <p>Record commands sent through Realm Guard, the sending account, and whether Minecraft reported completion, failure, or no response.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Moderation</div>
-            <h3>Admin Actions</h3>
-            <p>Track invitations, bans, unbans, removals, permission changes, disconnects, labels, flags, Realm identity changes, and world-slot changes.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Exports</div>
-            <h3>CSV And Text</h3>
-            <p>Export saved logs as spreadsheet-ready CSV or human-readable plain text, with optional date ranges and local export history.</p>
-          </article>
-        </div>
-      </div>
-    </section>
+<a class="store-button" href="https://apps.microsoft.com/detail/9pjz9xzk4jrq?cid=DevShareMCLPCS&amp;hl=en-US&amp;gl=US" aria-label="Download Realm Guard from the Microsoft Store"><img src="/assets/images/microsoft-store-icon.png" alt=""><span><small>Download from the</small><strong>Microsoft Store</strong></span></a>
+<div class="plan-grid"><article class="plan"><h2>Silver</h2><p class="plan-price">$4.99 <span>/ month</span></p><p>Flexible monthly access to the complete Admin Console.</p></article><article class="plan"><h2>Gold</h2><p class="plan-price">$29.99 <span>/ year</span></p><p>Complete annual access. Save approximately 50% compared with monthly billing.</p></article></div>
+<p class="detail-note">Microsoft Store handles purchases, renewals, and cancellations. Existing subscriptions can be restored through Realm Guard.</p>
+<h2 class="subheading">What you need</h2>
+<dl class="feature-rows"><div><dt>Windows &amp; Realm access</dt><dd>A Windows 10 or Windows 11 PC, an active Minecraft Bedrock Realm, a Microsoft account with access to it, internet access, and an active Realm Guard Microsoft Store subscription. Realm players can join from any supported Bedrock platform.</dd></div><div><dt>Observer account</dt><dd>Realm Guard connects through authorized Microsoft and Xbox services. A dedicated Minecraft observer account is recommended for continuous monitoring.</dd></div><div><dt>Owner account</dt><dd>An optional authorized Realm owner account unlocks owner-only management features. Realm Guard respects the account's permissions and the world's settings.</dd></div><div><dt>Windows integration</dt><dd>Launch with Windows, open normally or to the notification area, minimize to tray, and reconnect the observer automatically.</dd></div></dl>
+<p class="legal-note">Realm Guard is an independent application and is not affiliated with, endorsed by, or sponsored by Mojang Studios, Microsoft, Xbox, or Discord.</p>
+      </section>
+      <section id="privacy" class="product-view" aria-labelledby="privacy-title">
+        <header class="view-heading"><h1 id="privacy-title">Privacy</h1><p>Your Realm records stay on your PC. Realm Guard contains no advertising, third-party analytics, publisher telemetry, or cloud synchronization.</p></header>
 
-    <section class="section section-alt home-panel" id="management">
-      <div class="shell">
-        <div class="section-head">
-          <div class="kicker">Realm Management</div>
-          <h2>Owner-level Realm tools become available when an authorized Realm owner account is connected.</h2>
-          <p>Realm Guard never bypasses Minecraft permissions. World commands require cheats to be enabled in the active world and sufficient in-game permissions. Owner tools such as backups, invitations, and membership management do not require cheats; they require an authorized Realm owner account.</p>
-        </div>
-        <div class="timeline">
-          <article>
-            <span>Manage</span>
-            <h3>Realm Identity</h3>
-            <p>Change the Realm name and message, refresh Realm information from Microsoft's Realm services, and review the current Realm state.</p>
-          </article>
-          <article>
-            <span>Slots</span>
-            <h3>World Slot Control</h3>
-            <p>View all three world slots, identify the active world, change the active world slot, and review game mode and difficulty.</p>
-          </article>
-          <article>
-            <span>Settings</span>
-            <h3>Realm Settings Review</h3>
-            <p>Review cheat status, PvP, command blocks, forced game mode, required packs, and spawn protection settings.</p>
-          </article>
-          <article>
-            <span>Quick Commands</span>
-            <h3>Common Actions</h3>
-            <p>Teleport players, change game modes, set time, and set weather when cheats are enabled in the active world and the sending account has permission.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section home-panel">
-      <div class="shell split">
-        <div>
-          <div class="section-head compact">
-            <div class="kicker">Live Monitor</div>
-            <h2>Inspect the observer session when you need connection visibility.</h2>
-            <p>The Live Monitor is built for connection verification and troubleshooting rather than ordinary daily administration.</p>
-          </div>
-          <div class="info-list raised">
-            <div class="info-row"><strong>Session Details</strong><span>Observer connection state, session start time, Bedrock protocol version, reconnection attempts, and last disconnect information.</span></div>
-            <div class="info-row"><strong>Observed Activity</strong><span>Packet count, detected players, chat events observed, and commands available to the observer.</span></div>
-            <div class="info-row"><strong>Windows Behavior</strong><span>Launch with Windows, open normally or to the notification area, minimize to tray, reconnect automatically, and use preferred folders for exports and backups.</span></div>
-          </div>
-        </div>
-        <div>
-          <div class="section-head compact">
-            <div class="kicker">Player Actions</div>
-            <h2>Membership actions stay clear and deliberate.</h2>
-            <p>Selecting a player opens a dedicated administration panel for authorized actions.</p>
-          </div>
-          <div class="info-list raised">
-            <div class="info-row"><strong>Session Control</strong><span>Disconnect an online player from the current session and include an optional disconnect reason.</span></div>
-            <div class="info-row"><strong>Membership Control</strong><span>Change Realm permissions, remove a player from the Realm, invite by Xbox XUID, ban a player from rejoining, or clear bans.</span></div>
-            <div class="info-row"><strong>Admin Context</strong><span>Flag or clear players for review, use labels, and keep private local notes that are not written into exported moderation reports.</span></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section home-panel" id="subscriptions">
-      <div class="shell">
-        <div class="section-head compact">
-          <div class="kicker">Take Control Of Your Realm</div>
-          <h2>Bring live monitoring, player administration, moderation, commands, Realm management, local backups, organized logs, exports, and Discord status into one dedicated console.</h2>
-          <p>Realm Guard can monitor your Realm without cheats, resource packs, or add-ons. Command execution requires cheats to be enabled, which disables achievements for that world.</p>
-        </div>
-        <div class="cta-grid">
-          <div><strong>Complete Console</strong><span>Home dashboard, player records, moderation, logs, commands, Realm management, backups, exports, Discord, and live monitoring.</span></div>
-          <div><strong>Bedrock Realm Focused</strong><span>Players may join from any platform supported by Minecraft Bedrock Realms. Realm Guard itself runs on the administrator's Windows PC.</span></div>
-          <div><strong>Independent App</strong><span>Realm Guard is not affiliated with, endorsed by, or sponsored by Mojang Studios, Microsoft, Xbox, or Discord.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="availability">
-      <div class="shell final-cta">
-        <img src="/assets/images/realm-guard-helmet.png" alt="Realm Guard knight mark">
-        <div>
-          <div class="kicker">Get Realm Guard</div>
-          <h2>Install Realm Guard from the Microsoft Store and activate the plan that fits your realm.</h2>
-          <p>The Microsoft Store handles purchase, renewal, cancellation, and subscription restore flows for the Realm Guard Admin Console.</p>
-          <div class="subscription-grid final-subscription-grid">
-            <article class="card subscription-card">
-              <div class="eyebrow">Silver Subscription</div>
-              <h3>$4.99 per month</h3>
-              <p>Flexible monthly access to the complete Realm Guard Admin Console.</p>
-            </article>
-            <article class="card subscription-card">
-              <div class="eyebrow">Gold Subscription</div>
-              <h3>$29.99 per year</h3>
-              <p>Complete annual access while saving approximately 50% compared with monthly billing.</p>
-            </article>
-          </div>
-          <div class="inline-actions">
-            <a class="store-button" href="https://apps.microsoft.com/detail/9PJZ9XZK4JRQ" aria-label="Download Realm Guard from the Microsoft Store">
-              <img src="/assets/images/microsoft-store-icon.png" alt="">
-              <span><small>Download from the</small><strong>Microsoft Store</strong></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-alt home-panel">
-      <div class="shell">
-        <div class="section-head">
-          <div class="kicker">Privacy And Requirements</div>
-          <h2>Your Realm data stays yours, and the requirements are straightforward.</h2>
-          <p>Realm Guard contains no advertising, third-party analytics, publisher telemetry, or cloud synchronization.</p>
-        </div>
-        <div class="card-grid">
-          <article class="card">
-            <div class="eyebrow">Private Local Storage</div>
-            <h3>Stored On Your PC</h3>
-            <p>Realm records, player information, labels, administrator notes, logs, moderation history, commands, export history, archive history, and settings remain in private application storage.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Connected Services</div>
-            <h3>Microsoft, Xbox, Discord</h3>
-            <p>Microsoft and Xbox process authentication, Realm access, and Store licensing. Discord receives only the live Realm information sent to the authorized server and channel.</p>
-          </article>
-          <article class="card">
-            <div class="eyebrow">Requirements</div>
-            <h3>What You Need</h3>
-            <p>Use a Windows 10 or Windows 11 PC, an active Minecraft Bedrock Realm, a Microsoft account with Realm access, internet access, and an active Realm Guard Microsoft Store subscription.</p>
-          </article>
-        </div>
-        <div class="inline-actions">
-          <a class="button" href="/privacy/">Read Privacy Policy</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer home-footer"><span>Realm Guard © 2026</span><a href="/servers/">Community Servers Portal</a></footer>
-  <script src="/js/main.js"></script>
+<dl class="feature-rows"><div><dt>Private local storage</dt><dd>Realm records are stored locally in a private SQLite database on your PC. Player details, labels, administrator notes, logs, moderation and command history, exports, archives, and settings remain in private application storage.</dd></div><div><dt>Microsoft &amp; Xbox</dt><dd>Microsoft and Xbox process authentication, Realm access, and Microsoft Store licensing.</dd></div><div><dt>Optional Discord publishing</dt><dd>Discord receives only the live Realm information sent to the server and channel you explicitly authorize.</dd></div></dl>
+<a class="button" href="/privacy/">Read Privacy Policy</a>
+      </section>
+    </main>
+  </div>
+  <footer class="site-footer home-footer"><span>Realm Guard &copy; 2026</span><a href="/servers/">Community Servers Portal</a></footer>
+  <dialog class="screenshot-dialog" aria-label="Application screenshot"><button type="button" class="close-screenshot" aria-label="Close screenshot">&times;</button><img alt=""><p><span data-caption></span><a data-original target="_blank" rel="noopener">Open original &#8599;</a></p></dialog>
+  <noscript><style>.product-view{display:block!important}</style></noscript>
 </body>
 </html>
