@@ -1,4 +1,4 @@
-/* The Perfect Realm — shared site behavior */
+/* The Perfect Realm : shared site behavior */
 
 document.querySelectorAll('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 

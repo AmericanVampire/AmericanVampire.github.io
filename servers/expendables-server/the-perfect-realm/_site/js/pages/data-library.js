@@ -1,4 +1,4 @@
-/* The Perfect Realm — data-library page behavior */
+/* The Perfect Realm : data-library page behavior */
 
 const colors = [
       ["0","Black","#000000"],

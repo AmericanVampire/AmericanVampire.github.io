@@ -1,4 +1,4 @@
-/* The Perfect Realm — castle-marketplace page behavior */
+/* The Perfect Realm : castle-marketplace page behavior */
 
 
 const search = document.getElementById('search');

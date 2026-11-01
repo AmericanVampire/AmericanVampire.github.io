@@ -1,6 +1,6 @@
-/* The Perfect Realm — server-rules page styles */
+/* The Perfect Realm : server-rules page styles */
 
-/* The Perfect Realm — shared public-facing shell */
+/* The Perfect Realm : shared public-facing shell */
 :root {
   color-scheme: dark;
   --bg: #07101c;
@@ -90,7 +90,7 @@ body,.subpage{background:#07101c;color:var(--text)}
 .site-footer{background:#040a12;border-top:1px solid rgba(255,255,255,.09);color:#94a3b5}
 
 
-/* FINAL LOCKED SHARED SHELL — identical on every page */
+/* FINAL LOCKED SHARED SHELL : identical on every page */
 :root{
   --site-width:1180px;
   --header-height:76px;
@@ -250,7 +250,7 @@ body{background:#07101c!important}
   text-shadow: 0 1px 4px rgba(0,0,0,.45) !important;
 }
 
-/* Shared back-to-top control — identical on every page. */
+/* Shared back-to-top control : identical on every page. */
 .site-back-to-top {
   position: fixed !important;
   right: 28px !important;
